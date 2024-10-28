@@ -7,9 +7,9 @@
 
 streamlit을 활용한 UI 설계에 대해서 배웁니다. 
 
-| Lecture Topic       | Hours |
+| Lecture Topic &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Hours |
 |---------------------|-------|
-| [input UI](./CH1-UI-Design/streamlit-basic/)      | X hrs |
+| [input UI](./CH1-UI-Design/streamlit-basic/)| X hrs |
 | layout | X hrs |
 | session state | X hrs |
 | [Quiz](./CH1-UI-Design/quiz/) | X hrs |
@@ -18,7 +18,7 @@ streamlit을 활용한 UI 설계에 대해서 배웁니다.
 
 numpy, pandas를 활용한 데이터 처리를 배웁니다.
 
-| Lecture Topic       | Hours |
+| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Hours |
 |---------------------|-------|
 | Pandas Dataframe | X hrs |
 | Lambda function | X hrs |
@@ -29,7 +29,7 @@ numpy, pandas를 활용한 데이터 처리를 배웁니다.
 
 API의 개념과 OpenAI API 사용법을 배웁니다.
 
-| Lecture Topic       | Hours |
+| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Hours |
 |---------------------|-------|
 | [Lorempicsum](./CH3-API/api-basic/) | X hrs |
 | GPT | X hrs |
@@ -41,7 +41,7 @@ API의 개념과 OpenAI API 사용법을 배웁니다.
 
 LLM Prompting 기술들을 배웁니다.
 
-| Lecture Topic       | Hours |
+| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Hours |
 |---------------------|-------|
 | Prompting with user input | X hrs |
 | Zero-shot, One-shot, Few-shot | X hrs |
@@ -57,7 +57,7 @@ Raspberry Pi를 활용하여 IoT에 대해 배웁니다.
 
 OpenCV와 Mediapipe를 활용하여 컴퓨터비전에 대해 배웁니다.
 
-| Lecture Topic       | Hours |
+| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Hours |
 |---------------------|-------|
 | Image/Video Capture | X hrs |
 | Image Processing | X hrs |
@@ -71,7 +71,7 @@ OpenCV와 Mediapipe를 활용하여 컴퓨터비전에 대해 배웁니다.
 
 여러 AI 이론들을 배웁니다.
 
-| Lecture Topic       | Hours |
+| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Hours |
 |---------------------|-------|
 | Classification | X hrs |
 | Embedding / Cosine Similarity | X hrs |
