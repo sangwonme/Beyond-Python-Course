@@ -1,0 +1,823 @@
+[
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "pyplot",
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "isExtraImport": true,
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "BertTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "display_library",
+        "kind": 2,
+        "importPath": "CH1-UI-Design.quiz.library",
+        "description": "CH1-UI-Design.quiz.library",
+        "peekOfCode": "def display_library():\n    print(st.session_state['library'])\nwith st.form(\"Library Form\"):\n    title = st.text_input(\"Title\")\n    author = st.text_input(\"Author\")\n    year = st.number_input(\"Year\", min_value=1000, max_value=9999, step=1, format=\"%d\")\n    submit_button = st.form_submit_button(\"Submit\")\n    if submit_button:\n        pass\n        # TODO: call add_book",
+        "detail": "CH1-UI-Design.quiz.library",
+        "documentation": {}
+    },
+    {
+        "label": "search",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.quiz.library",
+        "description": "CH1-UI-Design.quiz.library",
+        "peekOfCode": "search = st.text_input(\"Search Book by Title\")\nif st.button(\"Search\"):\n    pass\n    # TODO: call search_book()\nremove = st.text_input(\"Remove Book by Title\")\nif st.button(\"Remove Book\"):\n    pass\n    # TODO: remove_book()",
+        "detail": "CH1-UI-Design.quiz.library",
+        "documentation": {}
+    },
+    {
+        "label": "remove",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.quiz.library",
+        "description": "CH1-UI-Design.quiz.library",
+        "peekOfCode": "remove = st.text_input(\"Remove Book by Title\")\nif st.button(\"Remove Book\"):\n    pass\n    # TODO: remove_book()",
+        "detail": "CH1-UI-Design.quiz.library",
+        "documentation": {}
+    },
+    {
+        "label": "exchange_rates",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.quiz.wallet",
+        "description": "CH1-UI-Design.quiz.wallet",
+        "peekOfCode": "exchange_rates = {\n    'USD': {'EUR': 0.95, 'GBP': 0.82, 'JPY': 140.5, 'USD': 1, 'KRW': 1300},\n    'EUR': {'USD': 1.05, 'GBP': 0.86, 'JPY': 147.9, 'EUR': 1, 'KRW': 1365},\n    'GBP': {'USD': 1.22, 'EUR': 1.16, 'JPY': 171.8, 'GBP': 1, 'KRW': 1583},\n    'JPY': {'USD': 0.0071, 'EUR': 0.0068, 'GBP': 0.0058, 'JPY': 1, 'KRW': 9.2},\n    'KRW': {'USD': 0.00077, 'EUR': 0.00073, 'GBP': 0.00063, 'JPY': 0.11, 'KRW': 1}\n}\n# Initialize wallet in session state if it does not exist\nif 'wallet' not in st.session_state:\n    st.session_state['wallet'] = {currency: 0 for currency in exchange_rates}",
+        "detail": "CH1-UI-Design.quiz.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "operation",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.quiz.wallet",
+        "description": "CH1-UI-Design.quiz.wallet",
+        "peekOfCode": "operation = st.selectbox(\"Choose Operation\", (\"deposit\", \"withdraw\", \"exchange\"))\namount = st.number_input(\"Amount\", min_value=0.0, format=\"%f\")\ncurrency = st.selectbox(\"Currency\", options=list(exchange_rates.keys()))\nif operation == \"exchange\":\n    target_currency = st.selectbox(\"Target Currency\", options=list(exchange_rates.keys()))\n    if st.button(\"Execute Exchange\"):\n        pass\n        # TODO\nelse:\n    if st.button(f\"{operation.title()} {amount} {currency}\"):",
+        "detail": "CH1-UI-Design.quiz.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "amount",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.quiz.wallet",
+        "description": "CH1-UI-Design.quiz.wallet",
+        "peekOfCode": "amount = st.number_input(\"Amount\", min_value=0.0, format=\"%f\")\ncurrency = st.selectbox(\"Currency\", options=list(exchange_rates.keys()))\nif operation == \"exchange\":\n    target_currency = st.selectbox(\"Target Currency\", options=list(exchange_rates.keys()))\n    if st.button(\"Execute Exchange\"):\n        pass\n        # TODO\nelse:\n    if st.button(f\"{operation.title()} {amount} {currency}\"):\n        if operation == \"deposit\":",
+        "detail": "CH1-UI-Design.quiz.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "currency",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.quiz.wallet",
+        "description": "CH1-UI-Design.quiz.wallet",
+        "peekOfCode": "currency = st.selectbox(\"Currency\", options=list(exchange_rates.keys()))\nif operation == \"exchange\":\n    target_currency = st.selectbox(\"Target Currency\", options=list(exchange_rates.keys()))\n    if st.button(\"Execute Exchange\"):\n        pass\n        # TODO\nelse:\n    if st.button(f\"{operation.title()} {amount} {currency}\"):\n        if operation == \"deposit\":\n            pass",
+        "detail": "CH1-UI-Design.quiz.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "agree",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "agree = st.checkbox('I agree')\nif agree:\n    st.write('Great!')\n# # Toggle\ncctv = st.toggle('CCTV')\ntv = st.toggle('TV')\nac = st.toggle('AC')\nlight = st.toggle('LIGHT')\nst.write('Switch ON: ')\nif cctv:",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "cctv",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "cctv = st.toggle('CCTV')\ntv = st.toggle('TV')\nac = st.toggle('AC')\nlight = st.toggle('LIGHT')\nst.write('Switch ON: ')\nif cctv:\n    st.write('CCTV is on')\nif tv:\n    st.write('TV is on')\nif ac:",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "tv",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "tv = st.toggle('TV')\nac = st.toggle('AC')\nlight = st.toggle('LIGHT')\nst.write('Switch ON: ')\nif cctv:\n    st.write('CCTV is on')\nif tv:\n    st.write('TV is on')\nif ac:\n    st.write('AC is on')",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "ac",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "ac = st.toggle('AC')\nlight = st.toggle('LIGHT')\nst.write('Switch ON: ')\nif cctv:\n    st.write('CCTV is on')\nif tv:\n    st.write('TV is on')\nif ac:\n    st.write('AC is on')\nif light:",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "light",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "light = st.toggle('LIGHT')\nst.write('Switch ON: ')\nif cctv:\n    st.write('CCTV is on')\nif tv:\n    st.write('TV is on')\nif ac:\n    st.write('AC is on')\nif light:\n    st.write('LIGHT is on')",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "option",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "option = st.selectbox(\n    'How would you like to be contacted?',\n    ['Email', 'Home phone', 'Mobile phone'])\nst.write('You selected:', option)\n# # Multiselect\nprice = {\n    'apple': 30,\n    'banana': 20,\n    'grape': 50\n}",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "price",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "price = {\n    'apple': 30,\n    'banana': 20,\n    'grape': 50\n}\noptions = st.multiselect(\n    'What fruits do you want to buy?',\n    ['apple', 'banana', 'grape'],\n)\ntotal = 0",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "options",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "options = st.multiselect(\n    'What fruits do you want to buy?',\n    ['apple', 'banana', 'grape'],\n)\ntotal = 0\nfor fruit in options:\n    total += price[fruit]\nst.write('Price: ', total)\n# Slider\nage = st.slider('How old are you?', 0, 130, 25)",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "total",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "total = 0\nfor fruit in options:\n    total += price[fruit]\nst.write('Price: ', total)\n# Slider\nage = st.slider('How old are you?', 0, 130, 25)\nst.write(\"I'm \", age, 'years old')\n# Text Input\ntitle = st.text_input('Movie title', 'Life of Brian')\nst.write('The current movie title is', title)",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "age = st.slider('How old are you?', 0, 130, 25)\nst.write(\"I'm \", age, 'years old')\n# Text Input\ntitle = st.text_input('Movie title', 'Life of Brian')\nst.write('The current movie title is', title)\n# Number Input\nnumber = st.number_input('Insert a number')\nst.write('The current number is ', number)",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "title",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "title = st.text_input('Movie title', 'Life of Brian')\nst.write('The current movie title is', title)\n# Number Input\nnumber = st.number_input('Insert a number')\nst.write('The current number is ', number)",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "number",
+        "kind": 5,
+        "importPath": "CH1-UI-Design.streamlit-basic.tv",
+        "description": "CH1-UI-Design.streamlit-basic.tv",
+        "peekOfCode": "number = st.number_input('Insert a number')\nst.write('The current number is ', number)",
+        "detail": "CH1-UI-Design.streamlit-basic.tv",
+        "documentation": {}
+    },
+    {
+        "label": "width",
+        "kind": 5,
+        "importPath": "CH3-API.api-basic.lorempicsum",
+        "description": "CH3-API.api-basic.lorempicsum",
+        "peekOfCode": "width = st.sidebar.number_input(\"Width\", min_value=100, max_value=1920, value=500)\nheight = st.sidebar.number_input(\"Height\", min_value=100, max_value=1080, value=500)\ngrayscale = st.sidebar.checkbox(\"Grayscale\")\nblur = st.sidebar.checkbox(\"Blur\")\n# Constructing the API URL based on user input\n# TODO: update_url\n# Fetching and displaying the image\nif st.sidebar.button(\"Fetch Image\"):\n    # TODO\n    response = requests.get(st.session_state['url'])",
+        "detail": "CH3-API.api-basic.lorempicsum",
+        "documentation": {}
+    },
+    {
+        "label": "height",
+        "kind": 5,
+        "importPath": "CH3-API.api-basic.lorempicsum",
+        "description": "CH3-API.api-basic.lorempicsum",
+        "peekOfCode": "height = st.sidebar.number_input(\"Height\", min_value=100, max_value=1080, value=500)\ngrayscale = st.sidebar.checkbox(\"Grayscale\")\nblur = st.sidebar.checkbox(\"Blur\")\n# Constructing the API URL based on user input\n# TODO: update_url\n# Fetching and displaying the image\nif st.sidebar.button(\"Fetch Image\"):\n    # TODO\n    response = requests.get(st.session_state['url'])\n    if response.status_code == 200:",
+        "detail": "CH3-API.api-basic.lorempicsum",
+        "documentation": {}
+    },
+    {
+        "label": "grayscale",
+        "kind": 5,
+        "importPath": "CH3-API.api-basic.lorempicsum",
+        "description": "CH3-API.api-basic.lorempicsum",
+        "peekOfCode": "grayscale = st.sidebar.checkbox(\"Grayscale\")\nblur = st.sidebar.checkbox(\"Blur\")\n# Constructing the API URL based on user input\n# TODO: update_url\n# Fetching and displaying the image\nif st.sidebar.button(\"Fetch Image\"):\n    # TODO\n    response = requests.get(st.session_state['url'])\n    if response.status_code == 200:\n        image = Image.open(BytesIO(response.content))",
+        "detail": "CH3-API.api-basic.lorempicsum",
+        "documentation": {}
+    },
+    {
+        "label": "blur",
+        "kind": 5,
+        "importPath": "CH3-API.api-basic.lorempicsum",
+        "description": "CH3-API.api-basic.lorempicsum",
+        "peekOfCode": "blur = st.sidebar.checkbox(\"Blur\")\n# Constructing the API URL based on user input\n# TODO: update_url\n# Fetching and displaying the image\nif st.sidebar.button(\"Fetch Image\"):\n    # TODO\n    response = requests.get(st.session_state['url'])\n    if response.status_code == 200:\n        image = Image.open(BytesIO(response.content))\n        st.image(image, caption=\"Random Image from Lorem Picsum\")",
+        "detail": "CH3-API.api-basic.lorempicsum",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "description": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "peekOfCode": "tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')\nmodel = BertModel.from_pretrained('bert-base-uncased')\n# 문장 정의\nsentence = \"I love reading books.\"\n# 문장을 토큰으로 변환 및 BERT 입력 형식으로 변환\ninputs = tokenizer(sentence, return_tensors='pt')\n# BERT 모델을 통해 임베딩 벡터 얻기\nwith torch.no_grad():\n    outputs = model(**inputs)\n# 임베딩 벡터 추출",
+        "detail": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "description": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "peekOfCode": "model = BertModel.from_pretrained('bert-base-uncased')\n# 문장 정의\nsentence = \"I love reading books.\"\n# 문장을 토큰으로 변환 및 BERT 입력 형식으로 변환\ninputs = tokenizer(sentence, return_tensors='pt')\n# BERT 모델을 통해 임베딩 벡터 얻기\nwith torch.no_grad():\n    outputs = model(**inputs)\n# 임베딩 벡터 추출\nembedding_vector = outputs.last_hidden_state.mean(dim=1)",
+        "detail": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "description": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "peekOfCode": "sentence = \"I love reading books.\"\n# 문장을 토큰으로 변환 및 BERT 입력 형식으로 변환\ninputs = tokenizer(sentence, return_tensors='pt')\n# BERT 모델을 통해 임베딩 벡터 얻기\nwith torch.no_grad():\n    outputs = model(**inputs)\n# 임베딩 벡터 추출\nembedding_vector = outputs.last_hidden_state.mean(dim=1)\nprint(\"임베딩 벡터:\", embedding_vector)",
+        "detail": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "documentation": {}
+    },
+    {
+        "label": "inputs",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "description": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "peekOfCode": "inputs = tokenizer(sentence, return_tensors='pt')\n# BERT 모델을 통해 임베딩 벡터 얻기\nwith torch.no_grad():\n    outputs = model(**inputs)\n# 임베딩 벡터 추출\nembedding_vector = outputs.last_hidden_state.mean(dim=1)\nprint(\"임베딩 벡터:\", embedding_vector)",
+        "detail": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "documentation": {}
+    },
+    {
+        "label": "embedding_vector",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "description": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "peekOfCode": "embedding_vector = outputs.last_hidden_state.mean(dim=1)\nprint(\"임베딩 벡터:\", embedding_vector)",
+        "detail": "CH7-AI-Algorithms.embedding-vector.embedding",
+        "documentation": {}
+    },
+    {
+        "label": "cosine_similarity",
+        "kind": 2,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "description": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "peekOfCode": "def cosine_similarity(vec1, vec2):\n    # TODO: 퀴즈 1 정답 입력\n    pass\n# 임베딩할 단어 리스트\ncategories = ['fruit', 'vehicle', 'animal', 'tool', 'electronic device', 'sport', 'profession', 'emotion', 'planet', 'musical_instrument']\n# BERT 모델 및 토크나이저 불러오기\ntokenizer = BertTokenizer.from_pretrained('bert-base-uncased')\nmodel = BertModel.from_pretrained('bert-base-uncased')\n# 단어 임베딩 벡터를 저장할 리스트\nembedding_vectors = []",
+        "detail": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "description": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "peekOfCode": "categories = ['fruit', 'vehicle', 'animal', 'tool', 'electronic device', 'sport', 'profession', 'emotion', 'planet', 'musical_instrument']\n# BERT 모델 및 토크나이저 불러오기\ntokenizer = BertTokenizer.from_pretrained('bert-base-uncased')\nmodel = BertModel.from_pretrained('bert-base-uncased')\n# 단어 임베딩 벡터를 저장할 리스트\nembedding_vectors = []\n# 각 단어를 임베딩 벡터로 변환하고 embedding_vectors에 저장\nfor word in categories:\n    # TODO: 퀴즈 2 정답 입력\n# 사용자 입력 받기",
+        "detail": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "description": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "peekOfCode": "tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')\nmodel = BertModel.from_pretrained('bert-base-uncased')\n# 단어 임베딩 벡터를 저장할 리스트\nembedding_vectors = []\n# 각 단어를 임베딩 벡터로 변환하고 embedding_vectors에 저장\nfor word in categories:\n    # TODO: 퀴즈 2 정답 입력\n# 사용자 입력 받기\nuser_input = input(\"텍스트를 입력하세요: \")\n# 입력된 단어(user_input)를 임베딩 벡터로 변환",
+        "detail": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "description": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "peekOfCode": "model = BertModel.from_pretrained('bert-base-uncased')\n# 단어 임베딩 벡터를 저장할 리스트\nembedding_vectors = []\n# 각 단어를 임베딩 벡터로 변환하고 embedding_vectors에 저장\nfor word in categories:\n    # TODO: 퀴즈 2 정답 입력\n# 사용자 입력 받기\nuser_input = input(\"텍스트를 입력하세요: \")\n# 입력된 단어(user_input)를 임베딩 벡터로 변환\n# TODO: 여기에 코드를 작성하게요.",
+        "detail": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "documentation": {}
+    },
+    {
+        "label": "embedding_vectors",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "description": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "peekOfCode": "embedding_vectors = []\n# 각 단어를 임베딩 벡터로 변환하고 embedding_vectors에 저장\nfor word in categories:\n    # TODO: 퀴즈 2 정답 입력\n# 사용자 입력 받기\nuser_input = input(\"텍스트를 입력하세요: \")\n# 입력된 단어(user_input)를 임베딩 벡터로 변환\n# TODO: 여기에 코드를 작성하게요.\n# 코사인 유사도를 통해 입력된 단어와 각 카테고리의 유사도 계산\nsimilarities = []",
+        "detail": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "documentation": {}
+    },
+    {
+        "label": "user_input",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "description": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "peekOfCode": "user_input = input(\"텍스트를 입력하세요: \")\n# 입력된 단어(user_input)를 임베딩 벡터로 변환\n# TODO: 여기에 코드를 작성하게요.\n# 코사인 유사도를 통해 입력된 단어와 각 카테고리의 유사도 계산\nsimilarities = []\n# TODO: 여기에 코드를 작성하세요.\n# 유사도가 가장 높은 카테고리 선택\nmax_index = np.argmax(similarities)\npredicted_category = categories[max_index]\n# 결과 출력",
+        "detail": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "documentation": {}
+    },
+    {
+        "label": "similarities",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "description": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "peekOfCode": "similarities = []\n# TODO: 여기에 코드를 작성하세요.\n# 유사도가 가장 높은 카테고리 선택\nmax_index = np.argmax(similarities)\npredicted_category = categories[max_index]\n# 결과 출력\nprint(f\"입력한 단어 '{user_input}'는 '{predicted_category}' 카테고리와 가장 유사합니다.\")\nprint('유사도 결과')\nfor i in range(len(categories)):\n    print(f'- {categories[i]}: {similarities[i]}' )",
+        "detail": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "documentation": {}
+    },
+    {
+        "label": "max_index",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "description": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "peekOfCode": "max_index = np.argmax(similarities)\npredicted_category = categories[max_index]\n# 결과 출력\nprint(f\"입력한 단어 '{user_input}'는 '{predicted_category}' 카테고리와 가장 유사합니다.\")\nprint('유사도 결과')\nfor i in range(len(categories)):\n    print(f'- {categories[i]}: {similarities[i]}' )",
+        "detail": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "documentation": {}
+    },
+    {
+        "label": "predicted_category",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "description": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "peekOfCode": "predicted_category = categories[max_index]\n# 결과 출력\nprint(f\"입력한 단어 '{user_input}'는 '{predicted_category}' 카테고리와 가장 유사합니다.\")\nprint('유사도 결과')\nfor i in range(len(categories)):\n    print(f'- {categories[i]}: {similarities[i]}' )",
+        "detail": "CH7-AI-Algorithms.embedding-vector.quiz3",
+        "documentation": {}
+    },
+    {
+        "label": "print_title",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def print_title():\n    pass\n    # --------------------------------------------------\n    # TODO: https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20\n    # 이 프로그램의 타이틀을 정한다.\n    # 위 웹사이트 들어가서 타이틀을 이쁜 스타일로 만들어준다.\n    # 프린트 한다.\n    # --------------------------------------------------\ndef add(x, y):\n    pass",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def add(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO\n    # --------------------------------------------------\ndef subtract(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "subtract",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def subtract(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO\n    # --------------------------------------------------\ndef multiply(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def multiply(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO\n    # --------------------------------------------------\ndef divide(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO : 0으로 나눌 경우 \"Error\"를 return 하고, 그 외의 경우에는 나눈 값을 return\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def divide(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO : 0으로 나눌 경우 \"Error\"를 return 하고, 그 외의 경우에는 나눈 값을 return\n    # --------------------------------------------------\ndef modulus(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "modulus",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def modulus(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO\n    # --------------------------------------------------\ndef exponent(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "exponent",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def exponent(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO\n    # --------------------------------------------------\ndef factorial(n):\n    pass\n    # --------------------------------------------------\n    # TODO : 0보다 작은 수가 오는 경우 \"Error\"를 return 하고, 그 외의 경우에는 적절한 값을 return\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "factorial",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def factorial(n):\n    pass\n    # --------------------------------------------------\n    # TODO : 0보다 작은 수가 오는 경우 \"Error\"를 return 하고, 그 외의 경우에는 적절한 값을 return\n    # --------------------------------------------------\ndef fibonacci(n):\n    pass\n    # --------------------------------------------------\n    # TODO : 0보다 작은 수가 오는 경우 \"Error\"를 return 하고, 그 외의 경우에는 적절한 값을 return",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "fibonacci",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def fibonacci(n):\n    pass\n    # --------------------------------------------------\n    # TODO : 0보다 작은 수가 오는 경우 \"Error\"를 return 하고, 그 외의 경우에는 적절한 값을 return\n    # --------------------------------------------------\ndef decimal_to_binary(n):\n    pass\n    # --------------------------------------------------\n    # TODO : 자연수 -> 이진수\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "decimal_to_binary",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def decimal_to_binary(n):\n    pass\n    # --------------------------------------------------\n    # TODO : 자연수 -> 이진수\n    # --------------------------------------------------\ndef gcd(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO : 최대공약수\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "gcd",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def gcd(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO : 최대공약수\n    # --------------------------------------------------\ndef lcm(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO : 최소공배수\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "lcm",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def lcm(x, y):\n    pass\n    # --------------------------------------------------\n    # TODO : 최소공배수\n    # --------------------------------------------------\ndef is_prime(n):\n    pass\n    # --------------------------------------------------\n    # TODO : 소수인지 아닌지 확인. \n    # Hint : return 값이 무엇인지는 함수의 사용법을 보고 알아낼 것.",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "is_prime",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def is_prime(n):\n    pass\n    # --------------------------------------------------\n    # TODO : 소수인지 아닌지 확인. \n    # Hint : return 값이 무엇인지는 함수의 사용법을 보고 알아낼 것.\n    # --------------------------------------------------\ndef binary_to_decimal(b):\n    pass\n    # --------------------------------------------------\n    # TODO : 이진수 -> 자연수",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "binary_to_decimal",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def binary_to_decimal(b):\n    pass\n    # --------------------------------------------------\n    # TODO : 이진수 -> 자연수\n    # --------------------------------------------------\ndef round_number(n, digits):\n    pass\n    # --------------------------------------------------\n    # TODO : digits 번째 자리수에서 반올림\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "round_number",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def round_number(n, digits):\n    pass\n    # --------------------------------------------------\n    # TODO : digits 번째 자리수에서 반올림\n    # --------------------------------------------------\ndef ceil_number(n):\n    pass\n    # --------------------------------------------------\n    # TODO : digits 번째 자리수에서 올림\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "ceil_number",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def ceil_number(n):\n    pass\n    # --------------------------------------------------\n    # TODO : digits 번째 자리수에서 올림\n    # --------------------------------------------------\ndef floor_number(n):\n    pass\n    # --------------------------------------------------\n    # TODO : digits 번째 자리수에서 올림\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "floor_number",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def floor_number(n):\n    pass\n    # --------------------------------------------------\n    # TODO : digits 번째 자리수에서 올림\n    # --------------------------------------------------\ndef print_calculation_history():\n    pass\n    # --------------------------------------------------\n    # TODO: 전체 calcuation_history를 한줄씩 프린트한다.\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "print_calculation_history",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def print_calculation_history():\n    pass\n    # --------------------------------------------------\n    # TODO: 전체 calcuation_history를 한줄씩 프린트한다.\n    # --------------------------------------------------\ndef print_nth_calculation_history(n):\n    pass\n    # --------------------------------------------------\n    # TODO: n번째 calcuation_history를 한줄씩 프린트한다. / 만약 n번째 계산 결과가 존재하지 않는다면 \"Error\"\n    # --------------------------------------------------",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "print_nth_calculation_history",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def print_nth_calculation_history(n):\n    pass\n    # --------------------------------------------------\n    # TODO: n번째 calcuation_history를 한줄씩 프린트한다. / 만약 n번째 계산 결과가 존재하지 않는다면 \"Error\"\n    # --------------------------------------------------\ndef main():\n    print_title()\n    while True:\n        print('---------------------------------------------')\n        print(\"\\nSelect operation:\")",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "def main():\n    print_title()\n    while True:\n        print('---------------------------------------------')\n        print(\"\\nSelect operation:\")\n        print(\"1. Add\")\n        print(\"2. Subtract\")\n        print(\"3. Multiply\")\n        print(\"4. Divide\")\n        print(\"5. Modulus\")",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "calculation_history",
+        "kind": 5,
+        "importPath": "dump.calculator",
+        "description": "dump.calculator",
+        "peekOfCode": "calculation_history = []\ndef print_title():\n    pass\n    # --------------------------------------------------\n    # TODO: https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20\n    # 이 프로그램의 타이틀을 정한다.\n    # 위 웹사이트 들어가서 타이틀을 이쁜 스타일로 만들어준다.\n    # 프린트 한다.\n    # --------------------------------------------------\ndef add(x, y):",
+        "detail": "dump.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "print_title",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def print_title():\n    # --------------------------------------------------\n    # Title generated from the given website:\n    title = \"\"\"\n_________        .__  _________       .__   \n\\_   ___ \\_____  |  | \\_   ___ \\ __ __|  |  \n/    \\  \\/\\__  \\ |  | /    \\  \\/|  |  \\  |  \n\\     \\____/ __ \\|  |_\\     \\___|  |  /  |__\n \\______  (____  /____/\\______  /____/|____/\n        \\/     \\/             \\/            ",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def add(x, y):\n    return x + y\ndef subtract(x, y):\n    return x - y\ndef multiply(x, y):\n    return x * y\ndef divide(x, y):\n    return \"Error\" if y == 0 else x / y\ndef modulus(x, y):\n    return x % y",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "subtract",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def subtract(x, y):\n    return x - y\ndef multiply(x, y):\n    return x * y\ndef divide(x, y):\n    return \"Error\" if y == 0 else x / y\ndef modulus(x, y):\n    return x % y\ndef exponent(x, y):\n    return x ** y",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def multiply(x, y):\n    return x * y\ndef divide(x, y):\n    return \"Error\" if y == 0 else x / y\ndef modulus(x, y):\n    return x % y\ndef exponent(x, y):\n    return x ** y\ndef factorial(n):\n    return \"Error\" if n < 0 else math.factorial(n)",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def divide(x, y):\n    return \"Error\" if y == 0 else x / y\ndef modulus(x, y):\n    return x % y\ndef exponent(x, y):\n    return x ** y\ndef factorial(n):\n    return \"Error\" if n < 0 else math.factorial(n)\ndef fibonacci(n):\n    if n < 0:",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "modulus",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def modulus(x, y):\n    return x % y\ndef exponent(x, y):\n    return x ** y\ndef factorial(n):\n    return \"Error\" if n < 0 else math.factorial(n)\ndef fibonacci(n):\n    if n < 0:\n        return \"Error\"\n    a, b = 0, 1",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "exponent",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def exponent(x, y):\n    return x ** y\ndef factorial(n):\n    return \"Error\" if n < 0 else math.factorial(n)\ndef fibonacci(n):\n    if n < 0:\n        return \"Error\"\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "factorial",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def factorial(n):\n    return \"Error\" if n < 0 else math.factorial(n)\ndef fibonacci(n):\n    if n < 0:\n        return \"Error\"\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a\ndef decimal_to_binary(n):",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "fibonacci",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def fibonacci(n):\n    if n < 0:\n        return \"Error\"\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a\ndef decimal_to_binary(n):\n    return bin(n).replace(\"0b\", \"\")\ndef gcd(x, y):",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "decimal_to_binary",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def decimal_to_binary(n):\n    return bin(n).replace(\"0b\", \"\")\ndef gcd(x, y):\n    return math.gcd(x, y)\ndef lcm(x, y):\n    return abs(x * y) // math.gcd(x, y)\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.sqrt(n)) + 1):",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "gcd",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def gcd(x, y):\n    return math.gcd(x, y)\ndef lcm(x, y):\n    return abs(x * y) // math.gcd(x, y)\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return False",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "lcm",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def lcm(x, y):\n    return abs(x * y) // math.gcd(x, y)\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef binary_to_decimal(b):",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "is_prime",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\ndef binary_to_decimal(b):\n    return int(b, 2)\ndef round_number(n, digits):",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "binary_to_decimal",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def binary_to_decimal(b):\n    return int(b, 2)\ndef round_number(n, digits):\n    factor = 10 ** (digits-1)\n    if (n // factor) % 10 >= 5:\n        return ((n // (factor*10))+1) * (factor*10)\n    else:\n        return ((n // (factor*10))) * (factor*10)\ndef ceil_number(n, digits):\n    factor = 10 ** digits",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "round_number",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def round_number(n, digits):\n    factor = 10 ** (digits-1)\n    if (n // factor) % 10 >= 5:\n        return ((n // (factor*10))+1) * (factor*10)\n    else:\n        return ((n // (factor*10))) * (factor*10)\ndef ceil_number(n, digits):\n    factor = 10 ** digits\n    return math.ceil(n / factor) * factor\ndef floor_number(n, digits):",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "ceil_number",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def ceil_number(n, digits):\n    factor = 10 ** digits\n    return math.ceil(n / factor) * factor\ndef floor_number(n, digits):\n    factor = 10 ** digits\n    return math.floor(n / factor) * factor\ndef print_calculation_history():\n    for entry in calculation_history:\n        print(entry)\ndef print_nth_calculation_history(n):",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "floor_number",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def floor_number(n, digits):\n    factor = 10 ** digits\n    return math.floor(n / factor) * factor\ndef print_calculation_history():\n    for entry in calculation_history:\n        print(entry)\ndef print_nth_calculation_history(n):\n    if 0 <= n < len(calculation_history):\n        print(calculation_history[n])\n    else:",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "print_calculation_history",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def print_calculation_history():\n    for entry in calculation_history:\n        print(entry)\ndef print_nth_calculation_history(n):\n    if 0 <= n < len(calculation_history):\n        print(calculation_history[n])\n    else:\n        print(\"Error: Index out of range\")\ndef main():\n    print_title()",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "print_nth_calculation_history",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def print_nth_calculation_history(n):\n    if 0 <= n < len(calculation_history):\n        print(calculation_history[n])\n    else:\n        print(\"Error: Index out of range\")\ndef main():\n    print_title()\n    while True:\n        print('---------------------------------------------')\n        print(\"\\nSelect operation:\")",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "def main():\n    print_title()\n    while True:\n        print('---------------------------------------------')\n        print(\"\\nSelect operation:\")\n        print(\"1. Add\")\n        print(\"2. Subtract\")\n        print(\"3. Multiply\")\n        print(\"4. Divide\")\n        print(\"5. Modulus\")",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    },
+    {
+        "label": "calculation_history",
+        "kind": 5,
+        "importPath": "dump.calculator_answer",
+        "description": "dump.calculator_answer",
+        "peekOfCode": "calculation_history = []\ndef print_title():\n    # --------------------------------------------------\n    # Title generated from the given website:\n    title = \"\"\"\n_________        .__  _________       .__   \n\\_   ___ \\_____  |  | \\_   ___ \\ __ __|  |  \n/    \\  \\/\\__  \\ |  | /    \\  \\/|  |  \\  |  \n\\     \\____/ __ \\|  |_\\     \\___|  |  /  |__\n \\______  (____  /____/\\______  /____/|____/",
+        "detail": "dump.calculator_answer",
+        "documentation": {}
+    }
+]
