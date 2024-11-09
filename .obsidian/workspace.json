@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CH7-AI-Algorithms/embedding-vector/Lecture.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture"
+              "title": "README"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CH7-AI-Algorithms/embedding-vector/Lecture.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Lecture"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CH7-AI-Algorithms/embedding-vector/Lecture.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Lecture"
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CH7-AI-Algorithms/embedding-vector/Lecture.md"
+                "file": "README.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Lecture"
+              "title": "Outline of README"
             }
           }
         ]
@@ -162,8 +162,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7ab9d910e032078b",
+  "active": "e2191be571f8d746",
   "lastOpenFiles": [
+    "CH7-AI-Algorithms/embedding-vector/Lecture.md",
     "CH7-AI-Algorithms/embedding-vector/embedding.py",
     "CH7-AI-Algorithms/embedding-vector/Lecture.pdf",
     "CH7-AI-Algorithms/embedding-vector/Lecture_tmp.html"

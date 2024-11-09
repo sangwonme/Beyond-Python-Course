@@ -4,8 +4,8 @@ import torch
 
 # 코사인 유사도 함수 정의
 def cosine_similarity(vec1, vec2):
-    # TODO: 퀴즈 1 정답 입력
     pass
+    # TODO: 퀴즈 1 정답 입력
 
 # 임베딩할 단어 리스트
 categories = ['fruit', 'vehicle', 'animal', 'tool', 'electronic device', 'sport', 'profession', 'emotion', 'planet', 'musical_instrument']
@@ -19,6 +19,7 @@ embedding_vectors = []
 
 # 각 단어를 임베딩 벡터로 변환하고 embedding_vectors에 저장
 for word in categories:
+    pass
     # TODO: 퀴즈 2 정답 입력
 
 # 사용자 입력 받기

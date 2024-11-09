@@ -74,5 +74,5 @@ OpenCV와 Mediapipe를 활용하여 컴퓨터비전에 대해 배웁니다.
 | Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Hours |
 |---------------------|-------|
 | Classification | X hrs |
-| Embedding / Cosine Similarity | X hrs |
+| [Embedding / Cosine Similarity](./CH7-AI-Algorithms/embedding-vector/) | 3 hrs |
 | Quiz | X hrs |
