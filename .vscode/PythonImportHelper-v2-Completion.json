@@ -43,43 +43,43 @@
         "documentation": {}
     },
     {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "BytesIO",
         "importPath": "io",
         "description": "io",
         "isExtraImport": true,
         "detail": "io",
-        "documentation": {}
-    },
-    {
-        "label": "BertTokenizer",
-        "importPath": "transformers",
-        "description": "transformers",
-        "isExtraImport": true,
-        "detail": "transformers",
-        "documentation": {}
-    },
-    {
-        "label": "BertModel",
-        "importPath": "transformers",
-        "description": "transformers",
-        "isExtraImport": true,
-        "detail": "transformers",
-        "documentation": {}
-    },
-    {
-        "label": "BertTokenizer",
-        "importPath": "transformers",
-        "description": "transformers",
-        "isExtraImport": true,
-        "detail": "transformers",
-        "documentation": {}
-    },
-    {
-        "label": "BertModel",
-        "importPath": "transformers",
-        "description": "transformers",
-        "isExtraImport": true,
-        "detail": "transformers",
         "documentation": {}
     },
     {
@@ -92,12 +92,158 @@
         "documentation": {}
     },
     {
+        "label": "CLIPProcessor",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "CLIPModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "CLIPProcessor",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "CLIPModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "CLIPProcessor",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "CLIPModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "CLIPProcessor",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "CLIPModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
         "label": "numpy",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "numpy",
         "description": "numpy",
         "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "cosine_similarity",
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "isExtraImport": true,
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "cosine_similarity",
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "isExtraImport": true,
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "make_blobs",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
         "documentation": {}
     },
     {
@@ -317,6 +463,276 @@
         "documentation": {}
     },
     {
+        "label": "cosine_similarity",
+        "kind": 2,
+        "importPath": "CH7-AI-Algorithms.clip.1_clip_example",
+        "description": "CH7-AI-Algorithms.clip.1_clip_example",
+        "peekOfCode": "def cosine_similarity(vec1, vec2):\n    dot_product = np.dot(vec1, vec2)\n    norm_vec1 = np.linalg.norm(vec1)\n    norm_vec2 = np.linalg.norm(vec2)\n    return dot_product / (norm_vec1 * norm_vec2)\n# CLIP 모델 불러오기\nmodel = CLIPModel.from_pretrained(\"openai/clip-vit-base-patch32\")\nprocessor = CLIPProcessor.from_pretrained(\"openai/clip-vit-base-patch32\")\n# 이미지 불러오기\nimage = Image.open('./cat.jpg')",
+        "detail": "CH7-AI-Algorithms.clip.1_clip_example",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.1_clip_example",
+        "description": "CH7-AI-Algorithms.clip.1_clip_example",
+        "peekOfCode": "model = CLIPModel.from_pretrained(\"openai/clip-vit-base-patch32\")\nprocessor = CLIPProcessor.from_pretrained(\"openai/clip-vit-base-patch32\")\n# 이미지 불러오기\nimage = Image.open('./cat.jpg')\n# 이미지 임베딩하기\nimage_inputs = processor(images=image, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    image_embedding = model.get_image_features(**image_inputs)\n# 텍스트 정의\ntexts = ['A dog', 'A cat', 'A nuclear submarine']",
+        "detail": "CH7-AI-Algorithms.clip.1_clip_example",
+        "documentation": {}
+    },
+    {
+        "label": "processor",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.1_clip_example",
+        "description": "CH7-AI-Algorithms.clip.1_clip_example",
+        "peekOfCode": "processor = CLIPProcessor.from_pretrained(\"openai/clip-vit-base-patch32\")\n# 이미지 불러오기\nimage = Image.open('./cat.jpg')\n# 이미지 임베딩하기\nimage_inputs = processor(images=image, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    image_embedding = model.get_image_features(**image_inputs)\n# 텍스트 정의\ntexts = ['A dog', 'A cat', 'A nuclear submarine']\n# 각 텍스트 임베딩하기",
+        "detail": "CH7-AI-Algorithms.clip.1_clip_example",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.1_clip_example",
+        "description": "CH7-AI-Algorithms.clip.1_clip_example",
+        "peekOfCode": "image = Image.open('./cat.jpg')\n# 이미지 임베딩하기\nimage_inputs = processor(images=image, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    image_embedding = model.get_image_features(**image_inputs)\n# 텍스트 정의\ntexts = ['A dog', 'A cat', 'A nuclear submarine']\n# 각 텍스트 임베딩하기\ntext_inputs = processor(text=texts, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():",
+        "detail": "CH7-AI-Algorithms.clip.1_clip_example",
+        "documentation": {}
+    },
+    {
+        "label": "image_inputs",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.1_clip_example",
+        "description": "CH7-AI-Algorithms.clip.1_clip_example",
+        "peekOfCode": "image_inputs = processor(images=image, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    image_embedding = model.get_image_features(**image_inputs)\n# 텍스트 정의\ntexts = ['A dog', 'A cat', 'A nuclear submarine']\n# 각 텍스트 임베딩하기\ntext_inputs = processor(text=texts, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    text_embedding = model.get_text_features(**text_inputs)\n# 각 텍스트의 코사인 유사도 계산",
+        "detail": "CH7-AI-Algorithms.clip.1_clip_example",
+        "documentation": {}
+    },
+    {
+        "label": "texts",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.1_clip_example",
+        "description": "CH7-AI-Algorithms.clip.1_clip_example",
+        "peekOfCode": "texts = ['A dog', 'A cat', 'A nuclear submarine']\n# 각 텍스트 임베딩하기\ntext_inputs = processor(text=texts, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    text_embedding = model.get_text_features(**text_inputs)\n# 각 텍스트의 코사인 유사도 계산\nprint('=======================================')\nfor i in range(len(texts)):\n    similarity = cosine_similarity(image_embedding[0], text_embedding[i])\n    print(texts[i], ' : ', similarity)",
+        "detail": "CH7-AI-Algorithms.clip.1_clip_example",
+        "documentation": {}
+    },
+    {
+        "label": "text_inputs",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.1_clip_example",
+        "description": "CH7-AI-Algorithms.clip.1_clip_example",
+        "peekOfCode": "text_inputs = processor(text=texts, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    text_embedding = model.get_text_features(**text_inputs)\n# 각 텍스트의 코사인 유사도 계산\nprint('=======================================')\nfor i in range(len(texts)):\n    similarity = cosine_similarity(image_embedding[0], text_embedding[i])\n    print(texts[i], ' : ', similarity)\nprint('=======================================')",
+        "detail": "CH7-AI-Algorithms.clip.1_clip_example",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "description": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "peekOfCode": "model = CLIPModel.from_pretrained(\"openai/clip-vit-base-patch32\")\nprocessor = CLIPProcessor.from_pretrained(\"openai/clip-vit-base-patch32\")\n# 이미지 불러오기\nimage = Image.open('./cat.jpg')\n# 이미지 임베딩하기\nimage_inputs = processor(images=image, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    image_embedding = model.get_image_features(**image_inputs)\n# 텍스트 정의\ntexts = ['A dog', 'A cat', 'A nuclear submarine']",
+        "detail": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "documentation": {}
+    },
+    {
+        "label": "processor",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "description": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "peekOfCode": "processor = CLIPProcessor.from_pretrained(\"openai/clip-vit-base-patch32\")\n# 이미지 불러오기\nimage = Image.open('./cat.jpg')\n# 이미지 임베딩하기\nimage_inputs = processor(images=image, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    image_embedding = model.get_image_features(**image_inputs)\n# 텍스트 정의\ntexts = ['A dog', 'A cat', 'A nuclear submarine']\n# 각 텍스트 임베딩하기",
+        "detail": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "description": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "peekOfCode": "image = Image.open('./cat.jpg')\n# 이미지 임베딩하기\nimage_inputs = processor(images=image, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    image_embedding = model.get_image_features(**image_inputs)\n# 텍스트 정의\ntexts = ['A dog', 'A cat', 'A nuclear submarine']\n# 각 텍스트 임베딩하기\ntext_inputs = processor(text=texts, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():",
+        "detail": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "documentation": {}
+    },
+    {
+        "label": "image_inputs",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "description": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "peekOfCode": "image_inputs = processor(images=image, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    image_embedding = model.get_image_features(**image_inputs)\n# 텍스트 정의\ntexts = ['A dog', 'A cat', 'A nuclear submarine']\n# 각 텍스트 임베딩하기\ntext_inputs = processor(text=texts, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    text_embedding = model.get_text_features(**text_inputs)\n# 각 텍스트의 코사인 유사도 계산",
+        "detail": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "documentation": {}
+    },
+    {
+        "label": "texts",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "description": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "peekOfCode": "texts = ['A dog', 'A cat', 'A nuclear submarine']\n# 각 텍스트 임베딩하기\ntext_inputs = processor(text=texts, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    text_embedding = model.get_text_features(**text_inputs)\n# 각 텍스트의 코사인 유사도 계산\nprint('=======================================')\nfor i in range(len(texts)):\n    similarity = cosine_similarity(image_embedding[0], text_embedding[i])\n    print(texts[i], ' : ', similarity)",
+        "detail": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "documentation": {}
+    },
+    {
+        "label": "text_inputs",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "description": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "peekOfCode": "text_inputs = processor(text=texts, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    text_embedding = model.get_text_features(**text_inputs)\n# 각 텍스트의 코사인 유사도 계산\nprint('=======================================')\nfor i in range(len(texts)):\n    similarity = cosine_similarity(image_embedding[0], text_embedding[i])\n    print(texts[i], ' : ', similarity)\nprint('=======================================')",
+        "detail": "CH7-AI-Algorithms.clip.2_cosine_similarity",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.3_topk_image",
+        "description": "CH7-AI-Algorithms.clip.3_topk_image",
+        "peekOfCode": "model = CLIPModel.from_pretrained(\"openai/clip-vit-base-patch32\")\nprocessor = CLIPProcessor.from_pretrained(\"openai/clip-vit-base-patch32\")\n# 이미지 불러오기\nimages = []\nimage_filenames = []\nfor i in range(9):\n    image_filenames.append('./topk-image/dog_'+str(i)+'.png')\n    images.append(Image.open(image_filenames[i]))\n# 이미지 임베딩\nimage_inputs = processor(images=images, return_tensors=\"pt\", padding=True)",
+        "detail": "CH7-AI-Algorithms.clip.3_topk_image",
+        "documentation": {}
+    },
+    {
+        "label": "processor",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.3_topk_image",
+        "description": "CH7-AI-Algorithms.clip.3_topk_image",
+        "peekOfCode": "processor = CLIPProcessor.from_pretrained(\"openai/clip-vit-base-patch32\")\n# 이미지 불러오기\nimages = []\nimage_filenames = []\nfor i in range(9):\n    image_filenames.append('./topk-image/dog_'+str(i)+'.png')\n    images.append(Image.open(image_filenames[i]))\n# 이미지 임베딩\nimage_inputs = processor(images=images, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():",
+        "detail": "CH7-AI-Algorithms.clip.3_topk_image",
+        "documentation": {}
+    },
+    {
+        "label": "images",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.3_topk_image",
+        "description": "CH7-AI-Algorithms.clip.3_topk_image",
+        "peekOfCode": "images = []\nimage_filenames = []\nfor i in range(9):\n    image_filenames.append('./topk-image/dog_'+str(i)+'.png')\n    images.append(Image.open(image_filenames[i]))\n# 이미지 임베딩\nimage_inputs = processor(images=images, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    image_embeddings = model.get_image_features(**image_inputs)\n# 텍스트",
+        "detail": "CH7-AI-Algorithms.clip.3_topk_image",
+        "documentation": {}
+    },
+    {
+        "label": "image_filenames",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.3_topk_image",
+        "description": "CH7-AI-Algorithms.clip.3_topk_image",
+        "peekOfCode": "image_filenames = []\nfor i in range(9):\n    image_filenames.append('./topk-image/dog_'+str(i)+'.png')\n    images.append(Image.open(image_filenames[i]))\n# 이미지 임베딩\nimage_inputs = processor(images=images, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    image_embeddings = model.get_image_features(**image_inputs)\n# 텍스트\ntext = ['A dog is sleeping']",
+        "detail": "CH7-AI-Algorithms.clip.3_topk_image",
+        "documentation": {}
+    },
+    {
+        "label": "image_inputs",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.3_topk_image",
+        "description": "CH7-AI-Algorithms.clip.3_topk_image",
+        "peekOfCode": "image_inputs = processor(images=images, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    image_embeddings = model.get_image_features(**image_inputs)\n# 텍스트\ntext = ['A dog is sleeping']\ntext_inputs = processor(text=text, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    text_embedding = model.get_text_features(**text_inputs)\n# 코사인 유사도\nsimilarities = cosine_similarity(text_embedding, image_embeddings)",
+        "detail": "CH7-AI-Algorithms.clip.3_topk_image",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.3_topk_image",
+        "description": "CH7-AI-Algorithms.clip.3_topk_image",
+        "peekOfCode": "text = ['A dog is sleeping']\ntext_inputs = processor(text=text, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    text_embedding = model.get_text_features(**text_inputs)\n# 코사인 유사도\nsimilarities = cosine_similarity(text_embedding, image_embeddings)\n# TOP-K 결과 찾기\nk = 3\ntop_3_indices = similarities.topk(k).indices\nprint(\"Top 3 most similar images:\")",
+        "detail": "CH7-AI-Algorithms.clip.3_topk_image",
+        "documentation": {}
+    },
+    {
+        "label": "text_inputs",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.3_topk_image",
+        "description": "CH7-AI-Algorithms.clip.3_topk_image",
+        "peekOfCode": "text_inputs = processor(text=text, return_tensors=\"pt\", padding=True)\nwith torch.no_grad():\n    text_embedding = model.get_text_features(**text_inputs)\n# 코사인 유사도\nsimilarities = cosine_similarity(text_embedding, image_embeddings)\n# TOP-K 결과 찾기\nk = 3\ntop_3_indices = similarities.topk(k).indices\nprint(\"Top 3 most similar images:\")\nfor idx in top_3_indices:",
+        "detail": "CH7-AI-Algorithms.clip.3_topk_image",
+        "documentation": {}
+    },
+    {
+        "label": "similarities",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.3_topk_image",
+        "description": "CH7-AI-Algorithms.clip.3_topk_image",
+        "peekOfCode": "similarities = cosine_similarity(text_embedding, image_embeddings)\n# TOP-K 결과 찾기\nk = 3\ntop_3_indices = similarities.topk(k).indices\nprint(\"Top 3 most similar images:\")\nfor idx in top_3_indices:\n    print(f\"- {image_filenames[idx]}\")",
+        "detail": "CH7-AI-Algorithms.clip.3_topk_image",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.3_topk_image",
+        "description": "CH7-AI-Algorithms.clip.3_topk_image",
+        "peekOfCode": "k = 3\ntop_3_indices = similarities.topk(k).indices\nprint(\"Top 3 most similar images:\")\nfor idx in top_3_indices:\n    print(f\"- {image_filenames[idx]}\")",
+        "detail": "CH7-AI-Algorithms.clip.3_topk_image",
+        "documentation": {}
+    },
+    {
+        "label": "top_3_indices",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.3_topk_image",
+        "description": "CH7-AI-Algorithms.clip.3_topk_image",
+        "peekOfCode": "top_3_indices = similarities.topk(k).indices\nprint(\"Top 3 most similar images:\")\nfor idx in top_3_indices:\n    print(f\"- {image_filenames[idx]}\")",
+        "detail": "CH7-AI-Algorithms.clip.3_topk_image",
+        "documentation": {}
+    },
+    {
+        "label": "search_image_by_text",
+        "kind": 2,
+        "importPath": "CH7-AI-Algorithms.clip.quiz_search",
+        "description": "CH7-AI-Algorithms.clip.quiz_search",
+        "peekOfCode": "def search_image_by_text(text_prompt):\n    # 텍스트 임베딩\n    # TODO: 퀴즈 5 - 여기에 코드를 작성하시오.\n    print(f'Text Embedding\\'s shape: {text_embedding.shape}')\n    # 코사인 유사도\n    similarities = cosine_similarity(text_embedding, image_embeddings)\n    print('-----------------------------------------------------')\n    print(\"The most similar image found is: \", end='')\n    # TODO: 퀴즈 6 - 여기에 코드를 작성하시오.\n# -------------------------------------------------",
+        "detail": "CH7-AI-Algorithms.clip.quiz_search",
+        "documentation": {}
+    },
+    {
+        "label": "text_embedding",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.quiz_search",
+        "description": "CH7-AI-Algorithms.clip.quiz_search",
+        "peekOfCode": "text_embedding = torch.zeros(0)\nimage_embeddings = torch.zeros(0)\n# CLIP 모델 불러오기\nmodel = CLIPModel.from_pretrained(\"openai/clip-vit-base-patch32\")\nprocessor = CLIPProcessor.from_pretrained(\"openai/clip-vit-base-patch32\")\n# 이미지 불러오기\nimage_filenames = [] # 이미지 파일 경로 200개를 저장\nimages = [] # 이미지 객체 200개를 저장\nfor i in range(200):\n    pass",
+        "detail": "CH7-AI-Algorithms.clip.quiz_search",
+        "documentation": {}
+    },
+    {
+        "label": "image_embeddings",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.quiz_search",
+        "description": "CH7-AI-Algorithms.clip.quiz_search",
+        "peekOfCode": "image_embeddings = torch.zeros(0)\n# CLIP 모델 불러오기\nmodel = CLIPModel.from_pretrained(\"openai/clip-vit-base-patch32\")\nprocessor = CLIPProcessor.from_pretrained(\"openai/clip-vit-base-patch32\")\n# 이미지 불러오기\nimage_filenames = [] # 이미지 파일 경로 200개를 저장\nimages = [] # 이미지 객체 200개를 저장\nfor i in range(200):\n    pass\n    # 이미지 파일 경로를 파악하여 image_filenames 생성",
+        "detail": "CH7-AI-Algorithms.clip.quiz_search",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.quiz_search",
+        "description": "CH7-AI-Algorithms.clip.quiz_search",
+        "peekOfCode": "model = CLIPModel.from_pretrained(\"openai/clip-vit-base-patch32\")\nprocessor = CLIPProcessor.from_pretrained(\"openai/clip-vit-base-patch32\")\n# 이미지 불러오기\nimage_filenames = [] # 이미지 파일 경로 200개를 저장\nimages = [] # 이미지 객체 200개를 저장\nfor i in range(200):\n    pass\n    # 이미지 파일 경로를 파악하여 image_filenames 생성\n    # TODO: 퀴즈 3 - 여기에 코드를 작성하시오.\nfor i in range(len(image_filenames)):",
+        "detail": "CH7-AI-Algorithms.clip.quiz_search",
+        "documentation": {}
+    },
+    {
+        "label": "processor",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.quiz_search",
+        "description": "CH7-AI-Algorithms.clip.quiz_search",
+        "peekOfCode": "processor = CLIPProcessor.from_pretrained(\"openai/clip-vit-base-patch32\")\n# 이미지 불러오기\nimage_filenames = [] # 이미지 파일 경로 200개를 저장\nimages = [] # 이미지 객체 200개를 저장\nfor i in range(200):\n    pass\n    # 이미지 파일 경로를 파악하여 image_filenames 생성\n    # TODO: 퀴즈 3 - 여기에 코드를 작성하시오.\nfor i in range(len(image_filenames)):\n    image = Image.open(image_filenames[i])",
+        "detail": "CH7-AI-Algorithms.clip.quiz_search",
+        "documentation": {}
+    },
+    {
+        "label": "image_filenames",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.quiz_search",
+        "description": "CH7-AI-Algorithms.clip.quiz_search",
+        "peekOfCode": "image_filenames = [] # 이미지 파일 경로 200개를 저장\nimages = [] # 이미지 객체 200개를 저장\nfor i in range(200):\n    pass\n    # 이미지 파일 경로를 파악하여 image_filenames 생성\n    # TODO: 퀴즈 3 - 여기에 코드를 작성하시오.\nfor i in range(len(image_filenames)):\n    image = Image.open(image_filenames[i])\n    images.append(image)\nprint(f'Total {len(images)} images are loaded!')",
+        "detail": "CH7-AI-Algorithms.clip.quiz_search",
+        "documentation": {}
+    },
+    {
+        "label": "images",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.clip.quiz_search",
+        "description": "CH7-AI-Algorithms.clip.quiz_search",
+        "peekOfCode": "images = [] # 이미지 객체 200개를 저장\nfor i in range(200):\n    pass\n    # 이미지 파일 경로를 파악하여 image_filenames 생성\n    # TODO: 퀴즈 3 - 여기에 코드를 작성하시오.\nfor i in range(len(image_filenames)):\n    image = Image.open(image_filenames[i])\n    images.append(image)\nprint(f'Total {len(images)} images are loaded!')\n# 이미지 임베딩",
+        "detail": "CH7-AI-Algorithms.clip.quiz_search",
+        "documentation": {}
+    },
+    {
         "label": "tokenizer",
         "kind": 5,
         "importPath": "CH7-AI-Algorithms.embedding-vector.embedding",
@@ -440,6 +856,51 @@
         "description": "CH7-AI-Algorithms.embedding-vector.quiz",
         "peekOfCode": "predicted_category = categories[max_index]\n# 결과 출력\nprint(f\"입력한 단어 '{user_input}'는 '{predicted_category}' 카테고리와 가장 유사합니다.\")\nprint('유사도 결과')\nfor i in range(len(categories)):\n    print(f'- {categories[i]}: {similarities[i]}' )",
         "detail": "CH7-AI-Algorithms.embedding-vector.quiz",
+        "documentation": {}
+    },
+    {
+        "label": "plot_dataset",
+        "kind": 2,
+        "importPath": "CH7-AI-Algorithms.knn.knn",
+        "description": "CH7-AI-Algorithms.knn.knn",
+        "peekOfCode": "def plot_dataset(X, y):\n    plt.scatter(X[:, 0], X[:, 1], c=y, cmap=\"viridis\", s=50, edgecolor=\"k\")\n    plt.xlabel(\"Feature 1\")\n    plt.ylabel(\"Feature 2\")\n    plt.title(\"Dataset\")\n    plt.show()\nplot_dataset(X, y)\n# Step 3: Define a function to calculate the Euclidean distance\ndef euclidean_distance(point1, point2):\n    # Implement the Euclidean distance formula",
+        "detail": "CH7-AI-Algorithms.knn.knn",
+        "documentation": {}
+    },
+    {
+        "label": "euclidean_distance",
+        "kind": 2,
+        "importPath": "CH7-AI-Algorithms.knn.knn",
+        "description": "CH7-AI-Algorithms.knn.knn",
+        "peekOfCode": "def euclidean_distance(point1, point2):\n    # Implement the Euclidean distance formula\n    return np.sqrt(np.sum((point1 - point2) ** 2))\n# Step 4: Implement the KNN function\ndef knn(X_train, y_train, new_point, k=3):\n    # 1. Calculate distances between new_point and each point in X_train\n    distances = []\n    for i in range(len(X_train)):\n        # Calculate the distance from new_point to X_train[i]\n        dist = euclidean_distance(new_point, X_train[i])",
+        "detail": "CH7-AI-Algorithms.knn.knn",
+        "documentation": {}
+    },
+    {
+        "label": "knn",
+        "kind": 2,
+        "importPath": "CH7-AI-Algorithms.knn.knn",
+        "description": "CH7-AI-Algorithms.knn.knn",
+        "peekOfCode": "def knn(X_train, y_train, new_point, k=3):\n    # 1. Calculate distances between new_point and each point in X_train\n    distances = []\n    for i in range(len(X_train)):\n        # Calculate the distance from new_point to X_train[i]\n        dist = euclidean_distance(new_point, X_train[i])\n        distances.append((dist, y_train[i]))  # Save distance and label\n    # 2. Sort distances (ascending) and select the top-k closest neighbors\n    # Sort distances and take the first k neighbors\n    distances.sort(key=lambda x: x[0])",
+        "detail": "CH7-AI-Algorithms.knn.knn",
+        "documentation": {}
+    },
+    {
+        "label": "plot_knn_steps",
+        "kind": 2,
+        "importPath": "CH7-AI-Algorithms.knn.knn",
+        "description": "CH7-AI-Algorithms.knn.knn",
+        "peekOfCode": "def plot_knn_steps(X, y, k, new_point):\n    plt.figure(figsize=(10, 6))\n    # Plot the dataset\n    plt.scatter(X[:, 0], X[:, 1], c=y, cmap=\"viridis\", s=50, edgecolor=\"k\", label=\"Data points\")\n    # Plot the new point in red\n    plt.scatter(new_point[0], new_point[1], c=\"red\", s=100, label=\"New point\", marker=\"x\")\n    # Find the k nearest neighbors using our KNN function\n    distances = []\n    for i in range(len(X)):\n        dist = euclidean_distance(new_point, X[i])",
+        "detail": "CH7-AI-Algorithms.knn.knn",
+        "documentation": {}
+    },
+    {
+        "label": "new_point",
+        "kind": 5,
+        "importPath": "CH7-AI-Algorithms.knn.knn",
+        "description": "CH7-AI-Algorithms.knn.knn",
+        "peekOfCode": "new_point = [0, -6]\nplot_knn_steps",
+        "detail": "CH7-AI-Algorithms.knn.knn",
         "documentation": {}
     },
     {
