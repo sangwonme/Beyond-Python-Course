@@ -1,14 +1,11 @@
 import streamlit as st
-import pandas as pd
-from matplotlib import pyplot as plt
 
 # Title of the application
 st.title('Input UI')
 
 # # Button
-st.button("Reset", type="primary")
 
-if st.button('\+'):
+if st.button('Plus', type='primary'):
     st.write(10)
 else:
     st.write(0)
