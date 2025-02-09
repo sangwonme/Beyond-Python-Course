@@ -15,13 +15,6 @@ exchange_rates = {
 if 'wallet' not in st.session_state:
     st.session_state['wallet'] = {currency: 0 for currency in exchange_rates}
 
-# TODO: deposit 
-
-# TODO: withdraw
-
-# TODO: exchange
-
-
 # Operations: Deposit, Withdraw, Exchange
 operation = st.selectbox("Choose Operation", ("deposit", "withdraw", "exchange"))
 amount = st.number_input("Amount", min_value=0.0, format="%f")

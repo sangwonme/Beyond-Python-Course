@@ -1,0 +1,587 @@
+[
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "q1063",
+        "description": "q1063",
+        "peekOfCode": "N = int(N)\ncommands = []\nfor _ in range(N):\n    commands.append(input())\n# directions and command type\ndx = [1, -1, 0, 0, 1, -1, 1, -1]\ndy = [0, 0, -1, 1, 1, 1, -1, -1]\ncommand_type = ['R', 'L', 'B', 'T', 'RT', 'LT', 'RB', 'LB']\n# convert corrdinate\nking_x = ord(king[0]) - ord('A')",
+        "detail": "q1063",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "kind": 5,
+        "importPath": "q1063",
+        "description": "q1063",
+        "peekOfCode": "commands = []\nfor _ in range(N):\n    commands.append(input())\n# directions and command type\ndx = [1, -1, 0, 0, 1, -1, 1, -1]\ndy = [0, 0, -1, 1, 1, 1, -1, -1]\ncommand_type = ['R', 'L', 'B', 'T', 'RT', 'LT', 'RB', 'LB']\n# convert corrdinate\nking_x = ord(king[0]) - ord('A')\nking_y = int(king[1]) - 1",
+        "detail": "q1063",
+        "documentation": {}
+    },
+    {
+        "label": "dx",
+        "kind": 5,
+        "importPath": "q1063",
+        "description": "q1063",
+        "peekOfCode": "dx = [1, -1, 0, 0, 1, -1, 1, -1]\ndy = [0, 0, -1, 1, 1, 1, -1, -1]\ncommand_type = ['R', 'L', 'B', 'T', 'RT', 'LT', 'RB', 'LB']\n# convert corrdinate\nking_x = ord(king[0]) - ord('A')\nking_y = int(king[1]) - 1\ndol_x = ord(dol[0]) - ord('A')\ndol_y = int(dol[1]) - 1\n# move\nfor command in commands:",
+        "detail": "q1063",
+        "documentation": {}
+    },
+    {
+        "label": "dy",
+        "kind": 5,
+        "importPath": "q1063",
+        "description": "q1063",
+        "peekOfCode": "dy = [0, 0, -1, 1, 1, 1, -1, -1]\ncommand_type = ['R', 'L', 'B', 'T', 'RT', 'LT', 'RB', 'LB']\n# convert corrdinate\nking_x = ord(king[0]) - ord('A')\nking_y = int(king[1]) - 1\ndol_x = ord(dol[0]) - ord('A')\ndol_y = int(dol[1]) - 1\n# move\nfor command in commands:\n    # get dx dy",
+        "detail": "q1063",
+        "documentation": {}
+    },
+    {
+        "label": "command_type",
+        "kind": 5,
+        "importPath": "q1063",
+        "description": "q1063",
+        "peekOfCode": "command_type = ['R', 'L', 'B', 'T', 'RT', 'LT', 'RB', 'LB']\n# convert corrdinate\nking_x = ord(king[0]) - ord('A')\nking_y = int(king[1]) - 1\ndol_x = ord(dol[0]) - ord('A')\ndol_y = int(dol[1]) - 1\n# move\nfor command in commands:\n    # get dx dy\n    idx = 0",
+        "detail": "q1063",
+        "documentation": {}
+    },
+    {
+        "label": "king_x",
+        "kind": 5,
+        "importPath": "q1063",
+        "description": "q1063",
+        "peekOfCode": "king_x = ord(king[0]) - ord('A')\nking_y = int(king[1]) - 1\ndol_x = ord(dol[0]) - ord('A')\ndol_y = int(dol[1]) - 1\n# move\nfor command in commands:\n    # get dx dy\n    idx = 0\n    for i in range(len(command_type)):\n        if command_type[i] == command:",
+        "detail": "q1063",
+        "documentation": {}
+    },
+    {
+        "label": "king_y",
+        "kind": 5,
+        "importPath": "q1063",
+        "description": "q1063",
+        "peekOfCode": "king_y = int(king[1]) - 1\ndol_x = ord(dol[0]) - ord('A')\ndol_y = int(dol[1]) - 1\n# move\nfor command in commands:\n    # get dx dy\n    idx = 0\n    for i in range(len(command_type)):\n        if command_type[i] == command:\n            idx = i",
+        "detail": "q1063",
+        "documentation": {}
+    },
+    {
+        "label": "dol_x",
+        "kind": 5,
+        "importPath": "q1063",
+        "description": "q1063",
+        "peekOfCode": "dol_x = ord(dol[0]) - ord('A')\ndol_y = int(dol[1]) - 1\n# move\nfor command in commands:\n    # get dx dy\n    idx = 0\n    for i in range(len(command_type)):\n        if command_type[i] == command:\n            idx = i\n    # nx, ny",
+        "detail": "q1063",
+        "documentation": {}
+    },
+    {
+        "label": "dol_y",
+        "kind": 5,
+        "importPath": "q1063",
+        "description": "q1063",
+        "peekOfCode": "dol_y = int(dol[1]) - 1\n# move\nfor command in commands:\n    # get dx dy\n    idx = 0\n    for i in range(len(command_type)):\n        if command_type[i] == command:\n            idx = i\n    # nx, ny\n    king_nx = king_x + dx[idx]",
+        "detail": "q1063",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "q10709",
+        "description": "q10709",
+        "peekOfCode": "data = []\nfor i in range(H):\n    data.append(input())\n# init -1\nouput = []\nfor i in range(H):\n    line = []\n    for j in range(W):\n        line.append(-1)\n    ouput.append(line)",
+        "detail": "q10709",
+        "documentation": {}
+    },
+    {
+        "label": "ouput",
+        "kind": 5,
+        "importPath": "q10709",
+        "description": "q10709",
+        "peekOfCode": "ouput = []\nfor i in range(H):\n    line = []\n    for j in range(W):\n        line.append(-1)\n    ouput.append(line)\nfor i in range(H):\n    cloud_found = False\n    # 이 줄에서 구름이 있었다면 num += 1 / 구름을 새로 찾으면 -1 대입\n    for j in range(W):",
+        "detail": "q10709",
+        "documentation": {}
+    },
+    {
+        "label": "dirs",
+        "kind": 5,
+        "importPath": "q13567",
+        "description": "q13567",
+        "peekOfCode": "dirs = [[1,0], [0,1], [-1,0], [0,-1]]\ndir_idx = 0\npos = [0, 0]\nvalid = True\n# repeat n times\nfor i in range(n):\n    command = input().split()\n    if command[0] == 'MOVE':\n        pos[0] += (int(command[1]) * dirs[dir_idx][0])\n        pos[1] += (int(command[1]) * dirs[dir_idx][1])",
+        "detail": "q13567",
+        "documentation": {}
+    },
+    {
+        "label": "dir_idx",
+        "kind": 5,
+        "importPath": "q13567",
+        "description": "q13567",
+        "peekOfCode": "dir_idx = 0\npos = [0, 0]\nvalid = True\n# repeat n times\nfor i in range(n):\n    command = input().split()\n    if command[0] == 'MOVE':\n        pos[0] += (int(command[1]) * dirs[dir_idx][0])\n        pos[1] += (int(command[1]) * dirs[dir_idx][1])\n    elif command[0] == 'TURN':",
+        "detail": "q13567",
+        "documentation": {}
+    },
+    {
+        "label": "pos",
+        "kind": 5,
+        "importPath": "q13567",
+        "description": "q13567",
+        "peekOfCode": "pos = [0, 0]\nvalid = True\n# repeat n times\nfor i in range(n):\n    command = input().split()\n    if command[0] == 'MOVE':\n        pos[0] += (int(command[1]) * dirs[dir_idx][0])\n        pos[1] += (int(command[1]) * dirs[dir_idx][1])\n    elif command[0] == 'TURN':\n        if int(command[1]) == 0:",
+        "detail": "q13567",
+        "documentation": {}
+    },
+    {
+        "label": "valid",
+        "kind": 5,
+        "importPath": "q13567",
+        "description": "q13567",
+        "peekOfCode": "valid = True\n# repeat n times\nfor i in range(n):\n    command = input().split()\n    if command[0] == 'MOVE':\n        pos[0] += (int(command[1]) * dirs[dir_idx][0])\n        pos[1] += (int(command[1]) * dirs[dir_idx][1])\n    elif command[0] == 'TURN':\n        if int(command[1]) == 0:\n            dir_idx = (dir_idx + 1) % 4",
+        "detail": "q13567",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "q14503",
+        "description": "q14503",
+        "peekOfCode": "data = []\nfor i in range(N):\n    data.append(list(map(int, input().split())))\n# directions\ndy = [-1, 0, 1, 0]\ndx = [0, 1, 0, -1]\n# clean\nclean = []\nfor i in range(N):\n    row = []",
+        "detail": "q14503",
+        "documentation": {}
+    },
+    {
+        "label": "dy",
+        "kind": 5,
+        "importPath": "q14503",
+        "description": "q14503",
+        "peekOfCode": "dy = [-1, 0, 1, 0]\ndx = [0, 1, 0, -1]\n# clean\nclean = []\nfor i in range(N):\n    row = []\n    for j in range(M):\n        row.append(False)\n    clean.append(row)\n# ans",
+        "detail": "q14503",
+        "documentation": {}
+    },
+    {
+        "label": "dx",
+        "kind": 5,
+        "importPath": "q14503",
+        "description": "q14503",
+        "peekOfCode": "dx = [0, 1, 0, -1]\n# clean\nclean = []\nfor i in range(N):\n    row = []\n    for j in range(M):\n        row.append(False)\n    clean.append(row)\n# ans\ncnt = 0",
+        "detail": "q14503",
+        "documentation": {}
+    },
+    {
+        "label": "clean",
+        "kind": 5,
+        "importPath": "q14503",
+        "description": "q14503",
+        "peekOfCode": "clean = []\nfor i in range(N):\n    row = []\n    for j in range(M):\n        row.append(False)\n    clean.append(row)\n# ans\ncnt = 0\n# simulate\ny = r",
+        "detail": "q14503",
+        "documentation": {}
+    },
+    {
+        "label": "cnt",
+        "kind": 5,
+        "importPath": "q14503",
+        "description": "q14503",
+        "peekOfCode": "cnt = 0\n# simulate\ny = r\nx = c\ndir = d\nwhile True:\n    # print('------------------')\n    # print('Y, X: ', y, x)\n    # for i in range(N):\n    #     for j in range(M):",
+        "detail": "q14503",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "q14503",
+        "description": "q14503",
+        "peekOfCode": "y = r\nx = c\ndir = d\nwhile True:\n    # print('------------------')\n    # print('Y, X: ', y, x)\n    # for i in range(N):\n    #     for j in range(M):\n    #         print(int(clean[i][j]), end = ' ')\n    #     print()",
+        "detail": "q14503",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "q14503",
+        "description": "q14503",
+        "peekOfCode": "x = c\ndir = d\nwhile True:\n    # print('------------------')\n    # print('Y, X: ', y, x)\n    # for i in range(N):\n    #     for j in range(M):\n    #         print(int(clean[i][j]), end = ' ')\n    #     print()\n    # Step 1: Not clean -> clean",
+        "detail": "q14503",
+        "documentation": {}
+    },
+    {
+        "label": "dir",
+        "kind": 5,
+        "importPath": "q14503",
+        "description": "q14503",
+        "peekOfCode": "dir = d\nwhile True:\n    # print('------------------')\n    # print('Y, X: ', y, x)\n    # for i in range(N):\n    #     for j in range(M):\n    #         print(int(clean[i][j]), end = ' ')\n    #     print()\n    # Step 1: Not clean -> clean\n    if not clean[y][x]:",
+        "detail": "q14503",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "q15501",
+        "description": "q15501",
+        "peekOfCode": "N = int(input())\nA = list(map(int, input().split()))\nB = list(map(int, input().split()))\n# Search A[0]'s pos in B\npos = 0\nfor i in range(N):\n    if B[i] == A[0]:\n        pos = i\n        break\n# check if B is reversed",
+        "detail": "q15501",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 5,
+        "importPath": "q15501",
+        "description": "q15501",
+        "peekOfCode": "A = list(map(int, input().split()))\nB = list(map(int, input().split()))\n# Search A[0]'s pos in B\npos = 0\nfor i in range(N):\n    if B[i] == A[0]:\n        pos = i\n        break\n# check if B is reversed\nreverse = False",
+        "detail": "q15501",
+        "documentation": {}
+    },
+    {
+        "label": "B",
+        "kind": 5,
+        "importPath": "q15501",
+        "description": "q15501",
+        "peekOfCode": "B = list(map(int, input().split()))\n# Search A[0]'s pos in B\npos = 0\nfor i in range(N):\n    if B[i] == A[0]:\n        pos = i\n        break\n# check if B is reversed\nreverse = False\nif B[(pos+1)%N] == A[-1]:",
+        "detail": "q15501",
+        "documentation": {}
+    },
+    {
+        "label": "pos",
+        "kind": 5,
+        "importPath": "q15501",
+        "description": "q15501",
+        "peekOfCode": "pos = 0\nfor i in range(N):\n    if B[i] == A[0]:\n        pos = i\n        break\n# check if B is reversed\nreverse = False\nif B[(pos+1)%N] == A[-1]:\n    reverse = True\n# traverse and check if same",
+        "detail": "q15501",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "kind": 5,
+        "importPath": "q15501",
+        "description": "q15501",
+        "peekOfCode": "reverse = False\nif B[(pos+1)%N] == A[-1]:\n    reverse = True\n# traverse and check if same\nvalid = True\nfor i in range(N):\n    if reverse:\n        if A[i] != B[(pos-i)%N]:\n            valid = False\n    else:",
+        "detail": "q15501",
+        "documentation": {}
+    },
+    {
+        "label": "valid",
+        "kind": 5,
+        "importPath": "q15501",
+        "description": "q15501",
+        "peekOfCode": "valid = True\nfor i in range(N):\n    if reverse:\n        if A[i] != B[(pos-i)%N]:\n            valid = False\n    else:\n        if A[i] != B[(pos+i)%N]:\n            valid = False\nif valid:\n    print('good puzzle')",
+        "detail": "q15501",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "q1652",
+        "description": "q1652",
+        "peekOfCode": "N = int(input())\ndata = []\nfor _ in range(N):\n    data.append(input())\n# horizontal\nhorizontal = 0\nfor i in range(N):\n    space = 0\n    for j in range(N):\n        if data[i][j] == '.':",
+        "detail": "q1652",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "q1652",
+        "description": "q1652",
+        "peekOfCode": "data = []\nfor _ in range(N):\n    data.append(input())\n# horizontal\nhorizontal = 0\nfor i in range(N):\n    space = 0\n    for j in range(N):\n        if data[i][j] == '.':\n            space += 1",
+        "detail": "q1652",
+        "documentation": {}
+    },
+    {
+        "label": "horizontal",
+        "kind": 5,
+        "importPath": "q1652",
+        "description": "q1652",
+        "peekOfCode": "horizontal = 0\nfor i in range(N):\n    space = 0\n    for j in range(N):\n        if data[i][j] == '.':\n            space += 1\n        else:\n            space = 0\n        if space == 2:\n            horizontal += 1",
+        "detail": "q1652",
+        "documentation": {}
+    },
+    {
+        "label": "vertical",
+        "kind": 5,
+        "importPath": "q1652",
+        "description": "q1652",
+        "peekOfCode": "vertical = 0\nfor j in range(N):\n    space = 0\n    for i in range(N):\n        if data[i][j] == '.':\n            space += 1\n        else:\n            space = 0\n        if space == 2:\n            vertical += 1",
+        "detail": "q1652",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "q16918",
+        "description": "q16918",
+        "peekOfCode": "data = []\nfor _ in range(R):\n    data.append(list(input()))\n# init time\ntime = []\nfor i in range(R):\n    row = []\n    for j in range(C):\n        if data[i][j] == '.':\n            row.append(0)",
+        "detail": "q16918",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 5,
+        "importPath": "q16918",
+        "description": "q16918",
+        "peekOfCode": "time = []\nfor i in range(R):\n    row = []\n    for j in range(C):\n        if data[i][j] == '.':\n            row.append(0)\n        elif data[i][j] == 'O':\n            row.append(2)\n    time.append(row)\n# direction",
+        "detail": "q16918",
+        "documentation": {}
+    },
+    {
+        "label": "dx",
+        "kind": 5,
+        "importPath": "q16918",
+        "description": "q16918",
+        "peekOfCode": "dx = [-1, 1, 0, 0]\ndy = [0, 0, -1, 1]\n# simulation\nfor n in range(N-1):\n    explosion = []\n    for i in range(R):\n        for j in range(C):\n            # case time = 1 -> set bomb = increase time\n            # case time = 2 -> increase time\n            if time[i][j] <= 2:",
+        "detail": "q16918",
+        "documentation": {}
+    },
+    {
+        "label": "dy",
+        "kind": 5,
+        "importPath": "q16918",
+        "description": "q16918",
+        "peekOfCode": "dy = [0, 0, -1, 1]\n# simulation\nfor n in range(N-1):\n    explosion = []\n    for i in range(R):\n        for j in range(C):\n            # case time = 1 -> set bomb = increase time\n            # case time = 2 -> increase time\n            if time[i][j] <= 2:\n                time[i][j] += 1",
+        "detail": "q16918",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "q17251",
+        "description": "q17251",
+        "peekOfCode": "N = int(input())\ndata = list(map(int, input().split()))\nmax_value, left, right = 0, 0, 0\nfor i in range(N):\n    if data[i] > max_value:\n        max_value = data[i]\n        left = i\n        right = i\n    elif data[i] == max_value:\n        right = i",
+        "detail": "q17251",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "q17251",
+        "description": "q17251",
+        "peekOfCode": "data = list(map(int, input().split()))\nmax_value, left, right = 0, 0, 0\nfor i in range(N):\n    if data[i] > max_value:\n        max_value = data[i]\n        left = i\n        right = i\n    elif data[i] == max_value:\n        right = i\nleft_length = left",
+        "detail": "q17251",
+        "documentation": {}
+    },
+    {
+        "label": "left_length",
+        "kind": 5,
+        "importPath": "q17251",
+        "description": "q17251",
+        "peekOfCode": "left_length = left\nright_length = N - 1 - right\nif left_length > right_length:\n    print('B')\nelif right_length > left_length:\n    print('R')\nelse:\n    print('X')",
+        "detail": "q17251",
+        "documentation": {}
+    },
+    {
+        "label": "right_length",
+        "kind": 5,
+        "importPath": "q17251",
+        "description": "q17251",
+        "peekOfCode": "right_length = N - 1 - right\nif left_length > right_length:\n    print('B')\nelif right_length > left_length:\n    print('R')\nelse:\n    print('X')",
+        "detail": "q17251",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "q18242",
+        "description": "q18242",
+        "peekOfCode": "data = []\nfor _ in range(N):\n    data.append(input())\nans = ''\n# left / right idx\nleft = -1\nright = -1\nfor i in range(N):\n    for j in range(M):\n        if left == -1 and data[i][j] == '#':",
+        "detail": "q18242",
+        "documentation": {}
+    },
+    {
+        "label": "ans",
+        "kind": 5,
+        "importPath": "q18242",
+        "description": "q18242",
+        "peekOfCode": "ans = ''\n# left / right idx\nleft = -1\nright = -1\nfor i in range(N):\n    for j in range(M):\n        if left == -1 and data[i][j] == '#':\n            left = j\n        if left != -1 and data[i][j] == '#':\n            right = j",
+        "detail": "q18242",
+        "documentation": {}
+    },
+    {
+        "label": "left",
+        "kind": 5,
+        "importPath": "q18242",
+        "description": "q18242",
+        "peekOfCode": "left = -1\nright = -1\nfor i in range(N):\n    for j in range(M):\n        if left == -1 and data[i][j] == '#':\n            left = j\n        if left != -1 and data[i][j] == '#':\n            right = j\n    if left != -1 and right != -1:\n        break",
+        "detail": "q18242",
+        "documentation": {}
+    },
+    {
+        "label": "right",
+        "kind": 5,
+        "importPath": "q18242",
+        "description": "q18242",
+        "peekOfCode": "right = -1\nfor i in range(N):\n    for j in range(M):\n        if left == -1 and data[i][j] == '#':\n            left = j\n        if left != -1 and data[i][j] == '#':\n            right = j\n    if left != -1 and right != -1:\n        break\n# iterate in rows",
+        "detail": "q18242",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 5,
+        "importPath": "q20055",
+        "description": "q20055",
+        "peekOfCode": "A = list(map(int, input().split()))\nrobot = [False] * N\nresult = 0\nwhile True:\n    result += 1\n    # 1. rotate belt and robot (A도 slicing으로 회전)\n    A = [A[-1]] + A[:-1]\n    robot = [False] + robot[:-1]\n    robot[-1] = False\n    # 2. move the robots",
+        "detail": "q20055",
+        "documentation": {}
+    },
+    {
+        "label": "robot",
+        "kind": 5,
+        "importPath": "q20055",
+        "description": "q20055",
+        "peekOfCode": "robot = [False] * N\nresult = 0\nwhile True:\n    result += 1\n    # 1. rotate belt and robot (A도 slicing으로 회전)\n    A = [A[-1]] + A[:-1]\n    robot = [False] + robot[:-1]\n    robot[-1] = False\n    # 2. move the robots\n    for i in range(N - 1):",
+        "detail": "q20055",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "q20055",
+        "description": "q20055",
+        "peekOfCode": "result = 0\nwhile True:\n    result += 1\n    # 1. rotate belt and robot (A도 slicing으로 회전)\n    A = [A[-1]] + A[:-1]\n    robot = [False] + robot[:-1]\n    robot[-1] = False\n    # 2. move the robots\n    for i in range(N - 1):\n        idx = N-2-i",
+        "detail": "q20055",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "q25707",
+        "description": "q25707",
+        "peekOfCode": "N = int(input())\ndata = list(map(int, input().split()))\ndata.sort()\nprint(2*(data[-1]-data[0]))",
+        "detail": "q25707",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "q25707",
+        "description": "q25707",
+        "peekOfCode": "data = list(map(int, input().split()))\ndata.sort()\nprint(2*(data[-1]-data[0]))",
+        "detail": "q25707",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "q25918",
+        "description": "q25918",
+        "peekOfCode": "N = int(input())\nS = input()\n# init\nmax_size = 0 # measure the max_size of the stack\nstack = []\n# stack operation\nfor c in S:\n    # if popable -> pop\n    if len(stack) > 0 and stack[-1] != c:\n        stack.pop()",
+        "detail": "q25918",
+        "documentation": {}
+    },
+    {
+        "label": "S",
+        "kind": 5,
+        "importPath": "q25918",
+        "description": "q25918",
+        "peekOfCode": "S = input()\n# init\nmax_size = 0 # measure the max_size of the stack\nstack = []\n# stack operation\nfor c in S:\n    # if popable -> pop\n    if len(stack) > 0 and stack[-1] != c:\n        stack.pop()\n    # else -> push and update max_size",
+        "detail": "q25918",
+        "documentation": {}
+    },
+    {
+        "label": "max_size",
+        "kind": 5,
+        "importPath": "q25918",
+        "description": "q25918",
+        "peekOfCode": "max_size = 0 # measure the max_size of the stack\nstack = []\n# stack operation\nfor c in S:\n    # if popable -> pop\n    if len(stack) > 0 and stack[-1] != c:\n        stack.pop()\n    # else -> push and update max_size\n    else:\n        stack.append(c)",
+        "detail": "q25918",
+        "documentation": {}
+    },
+    {
+        "label": "stack",
+        "kind": 5,
+        "importPath": "q25918",
+        "description": "q25918",
+        "peekOfCode": "stack = []\n# stack operation\nfor c in S:\n    # if popable -> pop\n    if len(stack) > 0 and stack[-1] != c:\n        stack.pop()\n    # else -> push and update max_size\n    else:\n        stack.append(c)\n        if max_size < len(stack):",
+        "detail": "q25918",
+        "documentation": {}
+    },
+    {
+        "label": "cows",
+        "kind": 5,
+        "importPath": "q31063",
+        "description": "q31063",
+        "peekOfCode": "cows = list(map(int, input().split()))\ncandies = list(map(int, input().split()))\n# candies -> [6, 1, 3] => [[0, 6], [0, 1], [0, 3]]\nfor i in range(len(candies)):\n    candies[i] = [0, candies[i]]\n# simulation\nfor i in range(len(candies)):\n    for j in range(len(cows)):\n        # break if no candy\n        if candies[i][1] == candies[i][0]:",
+        "detail": "q31063",
+        "documentation": {}
+    },
+    {
+        "label": "candies",
+        "kind": 5,
+        "importPath": "q31063",
+        "description": "q31063",
+        "peekOfCode": "candies = list(map(int, input().split()))\n# candies -> [6, 1, 3] => [[0, 6], [0, 1], [0, 3]]\nfor i in range(len(candies)):\n    candies[i] = [0, candies[i]]\n# simulation\nfor i in range(len(candies)):\n    for j in range(len(cows)):\n        # break if no candy\n        if candies[i][1] == candies[i][0]:\n            break",
+        "detail": "q31063",
+        "documentation": {}
+    },
+    {
+        "label": "T",
+        "kind": 5,
+        "importPath": "q8911",
+        "description": "q8911",
+        "peekOfCode": "T = int(input())\nfor _ in range(T):\n    # command input\n    command = input()\n    # init\n    dirs = [[0,1], [-1,0], [0,-1], [1,0]]\n    dir_idx = 0\n    pos = [0,0]\n    x_min, x_max, y_min, y_max = 0, 0, 0, 0\n    # simulate for every command",
+        "detail": "q8911",
+        "documentation": {}
+    },
+    {
+        "label": "T",
+        "kind": 5,
+        "importPath": "q9012",
+        "description": "q9012",
+        "peekOfCode": "T = int(input())\nfor _ in range(T):\n    data = input()\n    ans = 'YES'\n    cnt = 0\n    for char in data:\n        if char == '(':\n            cnt += 1\n        elif char == ')':\n            cnt -= 1",
+        "detail": "q9012",
+        "documentation": {}
+    },
+    {
+        "label": "count_stars_before_shift",
+        "kind": 2,
+        "importPath": "usaco25jan1",
+        "description": "usaco25jan1",
+        "peekOfCode": "def count_stars_before_shift(t, test_cases):\n    results = []\n    for case in test_cases:\n        n, a, b, grid = case\n        stars = set()\n        # Process the grid\n        for i in range(n):\n            for j in range(n):\n                if grid[i][j] == 'B':\n                    # Black pixel, must overlap in both photos",
+        "detail": "usaco25jan1",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "usaco25jan1",
+        "description": "usaco25jan1",
+        "peekOfCode": "def main():\n    import sys\n    input = sys.stdin.read\n    data = input().splitlines()\n    T = int(data[0])\n    test_cases = []\n    index = 1\n    for _ in range(T):\n        n, a, b = map(int, data[index].split())\n        index += 1",
+        "detail": "usaco25jan1",
+        "documentation": {}
+    },
+    {
+        "label": "count_cows",
+        "kind": 2,
+        "importPath": "usaco25jan3",
+        "description": "usaco25jan3",
+        "peekOfCode": "def count_cows(N, a, b):\n    # 결과 저장 배열\n    results = [0] * (N + 1)\n    # 현재 상태에서 a[i] == b[i]인 경우 체크\n    original_matches = [1 if a[i] == b[i] else 0 for i in range(N)]\n    original_count = sum(original_matches)\n    # 모든 l, r에 대해 검진받는 소의 수 계산\n    for l in range(N):\n        current_matches = original_count\n        for r in range(l, N):",
+        "detail": "usaco25jan3",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "usaco25jan3",
+        "description": "usaco25jan3",
+        "peekOfCode": "N = int(input())\na = list(map(int, input().split()))\nb = list(map(int, input().split()))\n# 실행\noutput = count_cows(N, a, b)\nfor result in output:\n    print(result)",
+        "detail": "usaco25jan3",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "usaco25jan3",
+        "description": "usaco25jan3",
+        "peekOfCode": "a = list(map(int, input().split()))\nb = list(map(int, input().split()))\n# 실행\noutput = count_cows(N, a, b)\nfor result in output:\n    print(result)",
+        "detail": "usaco25jan3",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "usaco25jan3",
+        "description": "usaco25jan3",
+        "peekOfCode": "b = list(map(int, input().split()))\n# 실행\noutput = count_cows(N, a, b)\nfor result in output:\n    print(result)",
+        "detail": "usaco25jan3",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "usaco25jan3",
+        "description": "usaco25jan3",
+        "peekOfCode": "output = count_cows(N, a, b)\nfor result in output:\n    print(result)",
+        "detail": "usaco25jan3",
+        "documentation": {}
+    }
+]
