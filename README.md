@@ -2,8 +2,23 @@
 
 ### 수업자료
 
+> [OpenAI API-key](link)
 
-#### UI Design
+###### CH1 UI Design
+| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Link |
+|---------------------|-------|
+| Python Package | [자료](./Software/CH1-UI-Design/0_python-package/) |
+| Input UI | [자료](./Software/CH1-UI-Design/1_streamlit-inputUI/) |
+| Session State | [자료](./Software/CH1-UI-Design/2_streamlit-sessionstate/) |
+| Layout | [자료](./Software/CH1-UI-Design/3_streamlit-layout/) |
+
+###### CH2 API
+| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Link |
+|---------------------|-------|
+| API | [자료](./Software/CH2-API/1_api-basic) |
+
+###### CH3 LLM Prompting
+<!-- #### UI Design
 
 streamlit을 활용한 UI 설계에 대해서 배웁니다. 
 
@@ -75,4 +90,4 @@ OpenCV와 Mediapipe를 활용하여 컴퓨터비전에 대해 배웁니다.
 |---------------------|-------|
 | Classification | X hrs |
 | [Embedding / Cosine Similarity](./CH7-AI-Algorithms/embedding-vector/) | 3 hrs |
-| Quiz | X hrs |
+| Quiz | X hrs | -->

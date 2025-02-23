@@ -1,5 +1,23 @@
 [
     {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
         "label": "streamlit",
         "kind": 6,
         "isExtraImport": true,
@@ -63,6 +81,22 @@
         "description": "PIL",
         "isExtraImport": true,
         "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
         "documentation": {}
     },
     {
@@ -238,30 +272,12 @@
         "documentation": {}
     },
     {
-        "label": "math",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
-        "documentation": {}
-    },
-    {
         "label": "pygame",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "pygame",
         "description": "pygame",
         "detail": "pygame",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
         "documentation": {}
     },
     {
@@ -751,6 +767,15 @@
         "documentation": {}
     },
     {
+        "label": "T",
+        "kind": 5,
+        "importPath": "Algorithm.q30704",
+        "description": "Algorithm.q30704",
+        "peekOfCode": "T = int(input())\nfor _ in range(T):\n    num = int(input())\n    x = math.sqrt(num)\n    print(2 * (math.floor(x) + math.ceil(num / math.floor(x))))",
+        "detail": "Algorithm.q30704",
+        "documentation": {}
+    },
+    {
         "label": "cows",
         "kind": 5,
         "importPath": "Algorithm.q31063",
@@ -769,6 +794,33 @@
         "documentation": {}
     },
     {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Algorithm.q5600",
+        "description": "Algorithm.q5600",
+        "peekOfCode": "N = int(input())\ntest = []\nfor _ in range(N):\n    test.append(list(map(int, input().split())))\n# Initiate result with unknown state (2) - 1 indexing\nresult = [2] * (A+B+C+1)\n# Check the well-working\nfor i in range(N):\n    if test[i][3] == 1:\n        for j in range(3):",
+        "detail": "Algorithm.q5600",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 5,
+        "importPath": "Algorithm.q5600",
+        "description": "Algorithm.q5600",
+        "peekOfCode": "test = []\nfor _ in range(N):\n    test.append(list(map(int, input().split())))\n# Initiate result with unknown state (2) - 1 indexing\nresult = [2] * (A+B+C+1)\n# Check the well-working\nfor i in range(N):\n    if test[i][3] == 1:\n        for j in range(3):\n            result[test[i][j]] = 1",
+        "detail": "Algorithm.q5600",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Algorithm.q5600",
+        "description": "Algorithm.q5600",
+        "peekOfCode": "result = [2] * (A+B+C+1)\n# Check the well-working\nfor i in range(N):\n    if test[i][3] == 1:\n        for j in range(3):\n            result[test[i][j]] = 1\n# Check if there are brokens\nfor i in range(N):\n    if test[i][3] == 0:\n        # If there are 2 working, then remaining one is broken",
+        "detail": "Algorithm.q5600",
+        "documentation": {}
+    },
+    {
         "label": "T",
         "kind": 5,
         "importPath": "Algorithm.q8911",
@@ -784,6 +836,60 @@
         "description": "Algorithm.q9012",
         "peekOfCode": "T = int(input())\nfor _ in range(T):\n    data = input()\n    ans = 'YES'\n    cnt = 0\n    for char in data:\n        if char == '(':\n            cnt += 1\n        elif char == ')':\n            cnt -= 1",
         "detail": "Algorithm.q9012",
+        "documentation": {}
+    },
+    {
+        "label": "get_mismatch_count",
+        "kind": 2,
+        "importPath": "Algorithm.usaco25feb1",
+        "description": "Algorithm.usaco25feb1",
+        "peekOfCode": "def get_mismatch_count(grid, N):\n    \"\"\"Calculate the number of operations needed to restore symmetry.\"\"\"\n    mismatch_count = 0\n    half_N = N // 2\n    for i in range(half_N):\n        for j in range(half_N, N):\n            mirror_i = N - 1 - i\n            mirror_j = N - 1 - j\n            top_right = grid[i][j]\n            bottom_right = grid[mirror_i][j]",
+        "detail": "Algorithm.usaco25feb1",
+        "documentation": {}
+    },
+    {
+        "label": "grid",
+        "kind": 5,
+        "importPath": "Algorithm.usaco25feb1",
+        "description": "Algorithm.usaco25feb1",
+        "peekOfCode": "grid = [list(sys.stdin.readline().strip()) for _ in range(N)]\n# Calculate initial mismatches\nmismatch_count = get_mismatch_count(grid, N)\nprint(mismatch_count)\n# Process updates\nfor _ in range(U):\n    r, c = map(int, sys.stdin.readline().split())\n    r -= 1\n    c -= 1\n    # Toggle the cell",
+        "detail": "Algorithm.usaco25feb1",
+        "documentation": {}
+    },
+    {
+        "label": "mismatch_count",
+        "kind": 5,
+        "importPath": "Algorithm.usaco25feb1",
+        "description": "Algorithm.usaco25feb1",
+        "peekOfCode": "mismatch_count = get_mismatch_count(grid, N)\nprint(mismatch_count)\n# Process updates\nfor _ in range(U):\n    r, c = map(int, sys.stdin.readline().split())\n    r -= 1\n    c -= 1\n    # Toggle the cell\n    grid[r][c] = '#' if grid[r][c] == '.' else '.'\n    # Recalculate mismatch count",
+        "detail": "Algorithm.usaco25feb1",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Algorithm.usaco25feb2",
+        "description": "Algorithm.usaco25feb2",
+        "peekOfCode": "N = int(input())\ndata = list(map(int, input().split()))\ndata.sort()\n# max value\nmax_value = data[-1]",
+        "detail": "Algorithm.usaco25feb2",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Algorithm.usaco25feb2",
+        "description": "Algorithm.usaco25feb2",
+        "peekOfCode": "data = list(map(int, input().split()))\ndata.sort()\n# max value\nmax_value = data[-1]",
+        "detail": "Algorithm.usaco25feb2",
+        "documentation": {}
+    },
+    {
+        "label": "max_value",
+        "kind": 5,
+        "importPath": "Algorithm.usaco25feb2",
+        "description": "Algorithm.usaco25feb2",
+        "peekOfCode": "max_value = data[-1]",
+        "detail": "Algorithm.usaco25feb2",
         "documentation": {}
     },
     {
@@ -888,217 +994,226 @@
     {
         "label": "agree",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "agree = st.checkbox('I agree')\nif agree:\n    st.write('Great!')\n# # Toggle\ncctv = st.toggle('CCTV')\ntv = st.toggle('TV')\nac = st.toggle('AC')\nlight = st.toggle('LIGHT')\nst.write('Switch ON: ')\nif cctv:",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "cctv",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "cctv = st.toggle('CCTV')\ntv = st.toggle('TV')\nac = st.toggle('AC')\nlight = st.toggle('LIGHT')\nst.write('Switch ON: ')\nif cctv:\n    st.write('CCTV is on')\nif tv:\n    st.write('TV is on')\nif ac:",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "tv",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "tv = st.toggle('TV')\nac = st.toggle('AC')\nlight = st.toggle('LIGHT')\nst.write('Switch ON: ')\nif cctv:\n    st.write('CCTV is on')\nif tv:\n    st.write('TV is on')\nif ac:\n    st.write('AC is on')",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "ac",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "ac = st.toggle('AC')\nlight = st.toggle('LIGHT')\nst.write('Switch ON: ')\nif cctv:\n    st.write('CCTV is on')\nif tv:\n    st.write('TV is on')\nif ac:\n    st.write('AC is on')\nif light:",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "light",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "light = st.toggle('LIGHT')\nst.write('Switch ON: ')\nif cctv:\n    st.write('CCTV is on')\nif tv:\n    st.write('TV is on')\nif ac:\n    st.write('AC is on')\nif light:\n    st.write('LIGHT is on')",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "option",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "option = st.selectbox(\n    'How would you like to be contacted?',\n    ['Email', 'Home phone', 'Mobile phone'])\nst.write('You selected:', option)\n# # Multiselect\nprice = {\n    'apple': 30,\n    'banana': 20,\n    'grape': 50\n}",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "price",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "price = {\n    'apple': 30,\n    'banana': 20,\n    'grape': 50\n}\noptions = st.multiselect(\n    'What fruits do you want to buy?',\n    ['apple', 'banana', 'grape'],\n)\ntotal = 0",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "options",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "options = st.multiselect(\n    'What fruits do you want to buy?',\n    ['apple', 'banana', 'grape'],\n)\ntotal = 0\nfor fruit in options:\n    total += price[fruit]\nst.write('Price: ', total)\n# Slider\nage = st.slider('How old are you?', 0, 130, 25)",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "total",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "total = 0\nfor fruit in options:\n    total += price[fruit]\nst.write('Price: ', total)\n# Slider\nage = st.slider('How old are you?', 0, 130, 25)\nst.write(\"I'm \", age, 'years old')\n# Text Input\ntitle = st.text_input('Movie title', 'Life of Brian')\nst.write('The current movie title is', title)",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "age",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "age = st.slider('How old are you?', 0, 130, 25)\nst.write(\"I'm \", age, 'years old')\n# Text Input\ntitle = st.text_input('Movie title', 'Life of Brian')\nst.write('The current movie title is', title)\n# Number Input\nnumber = st.number_input('Insert a number')\nst.write('The current number is ', number)",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "title",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "title = st.text_input('Movie title', 'Life of Brian')\nst.write('The current movie title is', title)\n# Number Input\nnumber = st.number_input('Insert a number')\nst.write('The current number is ', number)",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "number",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-inputUI.tv",
-        "description": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "importPath": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
+        "description": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "peekOfCode": "number = st.number_input('Insert a number')\nst.write('The current number is ', number)",
-        "detail": "Software.CH1-UI-Design.streamlit-inputUI.tv",
+        "detail": "Software.CH1-UI-Design.1_streamlit-inputUI.tv",
         "documentation": {}
     },
     {
         "label": "count",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-sessionstate.example",
-        "description": "Software.CH1-UI-Design.streamlit-sessionstate.example",
+        "importPath": "Software.CH1-UI-Design.2_streamlit-sessionstate.example",
+        "description": "Software.CH1-UI-Design.2_streamlit-sessionstate.example",
         "peekOfCode": "count = 0  # 매번 실행될 때마다 count가 초기화됨\nif st.button(\"Increase\"):\n    count += 10\nst.write(\"Count:\", count)",
-        "detail": "Software.CH1-UI-Design.streamlit-sessionstate.example",
+        "detail": "Software.CH1-UI-Design.2_streamlit-sessionstate.example",
         "documentation": {}
     },
     {
         "label": "display_library",
         "kind": 2,
-        "importPath": "Software.CH1-UI-Design.streamlit-sessionstate.library",
-        "description": "Software.CH1-UI-Design.streamlit-sessionstate.library",
+        "importPath": "Software.CH1-UI-Design.2_streamlit-sessionstate.library",
+        "description": "Software.CH1-UI-Design.2_streamlit-sessionstate.library",
         "peekOfCode": "def display_library():\n    print(st.session_state['library'])\nwith st.form(\"Library Form\"):\n    title = st.text_input(\"Title\")\n    author = st.text_input(\"Author\")\n    year = st.number_input(\"Year\", min_value=1000, max_value=9999, step=1, format=\"%d\")\n    submit_button = st.form_submit_button(\"Submit\")\n    if submit_button:\n        pass\n        # TODO: call add_book",
-        "detail": "Software.CH1-UI-Design.streamlit-sessionstate.library",
+        "detail": "Software.CH1-UI-Design.2_streamlit-sessionstate.library",
         "documentation": {}
     },
     {
         "label": "search",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-sessionstate.library",
-        "description": "Software.CH1-UI-Design.streamlit-sessionstate.library",
+        "importPath": "Software.CH1-UI-Design.2_streamlit-sessionstate.library",
+        "description": "Software.CH1-UI-Design.2_streamlit-sessionstate.library",
         "peekOfCode": "search = st.text_input(\"Search Book by Title\")\nif st.button(\"Search\"):\n    pass\n    # TODO: call search_book()\nremove = st.text_input(\"Remove Book by Title\")\nif st.button(\"Remove Book\"):\n    pass\n    # TODO: remove_book()",
-        "detail": "Software.CH1-UI-Design.streamlit-sessionstate.library",
+        "detail": "Software.CH1-UI-Design.2_streamlit-sessionstate.library",
         "documentation": {}
     },
     {
         "label": "remove",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-sessionstate.library",
-        "description": "Software.CH1-UI-Design.streamlit-sessionstate.library",
+        "importPath": "Software.CH1-UI-Design.2_streamlit-sessionstate.library",
+        "description": "Software.CH1-UI-Design.2_streamlit-sessionstate.library",
         "peekOfCode": "remove = st.text_input(\"Remove Book by Title\")\nif st.button(\"Remove Book\"):\n    pass\n    # TODO: remove_book()",
-        "detail": "Software.CH1-UI-Design.streamlit-sessionstate.library",
+        "detail": "Software.CH1-UI-Design.2_streamlit-sessionstate.library",
         "documentation": {}
     },
     {
         "label": "exchange_rates",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
-        "description": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
+        "importPath": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
+        "description": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
         "peekOfCode": "exchange_rates = {\n    'USD': {'EUR': 0.95, 'GBP': 0.82, 'JPY': 140.5, 'USD': 1, 'KRW': 1300},\n    'EUR': {'USD': 1.05, 'GBP': 0.86, 'JPY': 147.9, 'EUR': 1, 'KRW': 1365},\n    'GBP': {'USD': 1.22, 'EUR': 1.16, 'JPY': 171.8, 'GBP': 1, 'KRW': 1583},\n    'JPY': {'USD': 0.0071, 'EUR': 0.0068, 'GBP': 0.0058, 'JPY': 1, 'KRW': 9.2},\n    'KRW': {'USD': 0.00077, 'EUR': 0.00073, 'GBP': 0.00063, 'JPY': 0.11, 'KRW': 1}\n}\n# Initialize wallet in session state if it does not exist\nif 'wallet' not in st.session_state:\n    st.session_state['wallet'] = {currency: 0 for currency in exchange_rates}",
-        "detail": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
+        "detail": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
         "documentation": {}
     },
     {
         "label": "operation",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
-        "description": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
+        "importPath": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
+        "description": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
         "peekOfCode": "operation = st.selectbox(\"Choose Operation\", (\"deposit\", \"withdraw\", \"exchange\"))\namount = st.number_input(\"Amount\", min_value=0.0, format=\"%f\")\ncurrency = st.selectbox(\"Currency\", options=list(exchange_rates.keys()))\nif operation == \"exchange\":\n    target_currency = st.selectbox(\"Target Currency\", options=list(exchange_rates.keys()))\n    if st.button(\"Execute Exchange\"):\n        pass\n        # TODO\nelse:\n    if st.button(f\"{operation.title()} {amount} {currency}\"):",
-        "detail": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
+        "detail": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
         "documentation": {}
     },
     {
         "label": "amount",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
-        "description": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
+        "importPath": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
+        "description": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
         "peekOfCode": "amount = st.number_input(\"Amount\", min_value=0.0, format=\"%f\")\ncurrency = st.selectbox(\"Currency\", options=list(exchange_rates.keys()))\nif operation == \"exchange\":\n    target_currency = st.selectbox(\"Target Currency\", options=list(exchange_rates.keys()))\n    if st.button(\"Execute Exchange\"):\n        pass\n        # TODO\nelse:\n    if st.button(f\"{operation.title()} {amount} {currency}\"):\n        if operation == \"deposit\":",
-        "detail": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
+        "detail": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
         "documentation": {}
     },
     {
         "label": "currency",
         "kind": 5,
-        "importPath": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
-        "description": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
+        "importPath": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
+        "description": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
         "peekOfCode": "currency = st.selectbox(\"Currency\", options=list(exchange_rates.keys()))\nif operation == \"exchange\":\n    target_currency = st.selectbox(\"Target Currency\", options=list(exchange_rates.keys()))\n    if st.button(\"Execute Exchange\"):\n        pass\n        # TODO\nelse:\n    if st.button(f\"{operation.title()} {amount} {currency}\"):\n        if operation == \"deposit\":\n            pass",
-        "detail": "Software.CH1-UI-Design.streamlit-sessionstate.wallet",
+        "detail": "Software.CH1-UI-Design.2_streamlit-sessionstate.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "add_selectbox",
+        "kind": 5,
+        "importPath": "Software.CH1-UI-Design.3_streamlit-layout.test",
+        "description": "Software.CH1-UI-Design.3_streamlit-layout.test",
+        "peekOfCode": "add_selectbox = st.sidebar.selectbox(\n    \"How would you like to be contacted?\",\n    (\"Email\", \"Home phone\", \"Mobile phone\")\n)\nwith st.sidebar:\n    add_radio = st.radio(\n        \"Choose a shipping method\",\n        (\"Standard (5-15 days)\", \"Express (2-5 days)\")\n    )\n# Main content area",
+        "detail": "Software.CH1-UI-Design.3_streamlit-layout.test",
         "documentation": {}
     },
     {
         "label": "width",
         "kind": 5,
-        "importPath": "Software.CH3-API.api-basic.lorempicsum",
-        "description": "Software.CH3-API.api-basic.lorempicsum",
+        "importPath": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
+        "description": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
         "peekOfCode": "width = st.sidebar.number_input(\"Width\", min_value=100, max_value=1920, value=500)\nheight = st.sidebar.number_input(\"Height\", min_value=100, max_value=1080, value=500)\ngrayscale = st.sidebar.checkbox(\"Grayscale\")\nblur = st.sidebar.checkbox(\"Blur\")\n# Constructing the API URL based on user input\n# TODO: update_url\n# Fetching and displaying the image\nif st.sidebar.button(\"Fetch Image\"):\n    # TODO\n    response = requests.get(st.session_state['url'])",
-        "detail": "Software.CH3-API.api-basic.lorempicsum",
+        "detail": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
         "documentation": {}
     },
     {
         "label": "height",
         "kind": 5,
-        "importPath": "Software.CH3-API.api-basic.lorempicsum",
-        "description": "Software.CH3-API.api-basic.lorempicsum",
+        "importPath": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
+        "description": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
         "peekOfCode": "height = st.sidebar.number_input(\"Height\", min_value=100, max_value=1080, value=500)\ngrayscale = st.sidebar.checkbox(\"Grayscale\")\nblur = st.sidebar.checkbox(\"Blur\")\n# Constructing the API URL based on user input\n# TODO: update_url\n# Fetching and displaying the image\nif st.sidebar.button(\"Fetch Image\"):\n    # TODO\n    response = requests.get(st.session_state['url'])\n    if response.status_code == 200:",
-        "detail": "Software.CH3-API.api-basic.lorempicsum",
+        "detail": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
         "documentation": {}
     },
     {
         "label": "grayscale",
         "kind": 5,
-        "importPath": "Software.CH3-API.api-basic.lorempicsum",
-        "description": "Software.CH3-API.api-basic.lorempicsum",
+        "importPath": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
+        "description": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
         "peekOfCode": "grayscale = st.sidebar.checkbox(\"Grayscale\")\nblur = st.sidebar.checkbox(\"Blur\")\n# Constructing the API URL based on user input\n# TODO: update_url\n# Fetching and displaying the image\nif st.sidebar.button(\"Fetch Image\"):\n    # TODO\n    response = requests.get(st.session_state['url'])\n    if response.status_code == 200:\n        image = Image.open(BytesIO(response.content))",
-        "detail": "Software.CH3-API.api-basic.lorempicsum",
+        "detail": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
         "documentation": {}
     },
     {
         "label": "blur",
         "kind": 5,
-        "importPath": "Software.CH3-API.api-basic.lorempicsum",
-        "description": "Software.CH3-API.api-basic.lorempicsum",
+        "importPath": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
+        "description": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
         "peekOfCode": "blur = st.sidebar.checkbox(\"Blur\")\n# Constructing the API URL based on user input\n# TODO: update_url\n# Fetching and displaying the image\nif st.sidebar.button(\"Fetch Image\"):\n    # TODO\n    response = requests.get(st.session_state['url'])\n    if response.status_code == 200:\n        image = Image.open(BytesIO(response.content))\n        st.image(image, caption=\"Random Image from Lorem Picsum\")",
-        "detail": "Software.CH3-API.api-basic.lorempicsum",
+        "detail": "Software.CH2-API.1_api-basic.api-basic.lorempicsum",
         "documentation": {}
     },
     {
