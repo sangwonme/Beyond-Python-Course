@@ -37,7 +37,7 @@ st.title('Input UI')
 - 애플리케이션의 제목을 설정하는 코드.
 
 ### Button
-  ![button](./button.png)
+  ![button](./images/button.png)
 
 ```python
 st.button("Reset", type="primary")
@@ -54,7 +54,7 @@ else:
 
 ### Checkbox
 
-  ![checkbox](./checkbox.png)
+  ![checkbox](./images/checkbox.png)
 
 ```python
 agree = st.checkbox('I agree')
@@ -65,7 +65,7 @@ if agree:
 
 ### Toggle
 
-  ![toggle](./toggle.png)
+  ![toggle](./images/toggle.png)
 
 ```python
 cctv = st.toggle('CCTV')
@@ -90,7 +90,7 @@ if light:
 
 ### Selectbox
 
-  ![selectbox](./selectbox.png)
+  ![selectbox](./images/selectbox.png)
 
 ```python
 option = st.selectbox(
@@ -103,7 +103,7 @@ st.write('You selected:', option)
 
 ### Multiselect
 
-  ![multiselect](./multiselect.png)
+  ![multiselect](./images/multiselect.png)
 
 ```python
 price = {
@@ -128,7 +128,7 @@ st.write('Price: ', total)
 
 ### Slider
 
-  ![slider](./slider.png)
+  ![slider](./images/slider.png)
 
 ```python
 age = st.slider('How old are you?', 0, 130, 25)
@@ -138,7 +138,7 @@ st.write("I'm ", age, 'years old')
 
 ### Text Input
 
-  ![textinput](./textinput.png)
+  ![textinput](./images/textinput.png)
 
 ```python
 title = st.text_input('Movie title', 'Life of Brian')
@@ -149,7 +149,7 @@ st.write('The current movie title is', title)
 ### Number Input
 
 
-  ![numberinput](./numberinput.png)
+  ![numberinput](./images/numberinput.png)
 
 ```python
 number = st.number_input('Insert a number')

@@ -17,6 +17,13 @@ blur = st.sidebar.checkbox("Blur")
 
 # Constructing the API URL based on user input
 # TODO: update_url
+st.session_state['url'] = f'https://picsum.photos/{width}/{height}'
+if grayscale:
+    st.session_state['url'] += '?grayscale'
+    if blur:
+        st.session_state['url'] += '&blur=10'
+if blur:
+    st.session_state['url'] += '?blur=10'
 
 # Fetching and displaying the image
 if st.sidebar.button("Fetch Image"):
