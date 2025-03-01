@@ -50,16 +50,16 @@ st.write("Count:", st.session_state.count)
 > 이 앱은 사용자가 다양한 통화를 **입금(Deposit), 출금(Withdraw), 환전(Exchange)**할 수 있도록 하며, 지갑 잔액을 지속적으로 관리할 수 있도록 한다.
 ### 기능 1: 입금 (Deposit)
 
-![img](./deposit.png)
+![img](./images/deposit.png)
 - 사용자가 'deposit'을 선택했을 때, 버튼을 누르면 `Amount만큼 Currency증가`
 
 ### 기능 2: 출금 (Withdraw)
-![img](./withdraw.png)
+![img](./images/withdraw.png)
 - 사용자가 'withdraw'을 선택했을 때, 버튼을 누르면 `Amount만큼 Currency감소`
 - **예외 처리에 대해 생각할 것.**
 
 ### 기능 3: 환전 (Exchange)
-![img](./exchange.png)
+![img](./images/exchange.png)
 - 사용자가 'exchange'을 선택했을 때, 버튼을 누르면 `Amount만큼 Currency감소 Target Currency는 환율만큼 계산된 뒤 증가`
 - **예외 처리에 대해 생각할 것.**
 

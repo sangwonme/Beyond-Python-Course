@@ -2,7 +2,7 @@
 
 ### 수업자료
 
-> [OpenAI API-key](link)
+> [API-key](https://docs.google.com/document/d/1TArgONkQoHQJlrgrAqhl6_mPaZSE-qLIwjaMsFNaUiY/edit?usp=sharing)
 
 ###### CH1 UI Design
 | Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Link |
