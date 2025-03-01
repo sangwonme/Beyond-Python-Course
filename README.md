@@ -16,6 +16,7 @@
 | Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Link |
 |---------------------|-------|
 | API | [자료](./Software/CH2-API/1_api-basic) |
+| OpenAI - GPT | [자료](./Software/CH2-API/2_openai-api) |
 
 ###### CH3 LLM Prompting
 <!-- #### UI Design
