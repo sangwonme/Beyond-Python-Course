@@ -1,4 +1,4 @@
-# OpenAI API
+# GPT API
 
 ## OpenAI
 - **OpenAI**: 인공지능 연구 및 개발을 하는 회사로, 다양한 AI 모델을 개발하여 API 형태로 제공.
@@ -163,8 +163,6 @@ while True:
 ![img](./images/chatbot.png)
 
 `3_quiz.py`의 TODO를 채워서 챗봇 GUI를 만들어보자
-
-다음 기능이 모두 동작해야 한다
 - Text Input에 입력을 한 뒤에 Send 버튼을 누르면 GPT API가 사용자 입력에 대한 응답을 한다
 - 사용자의 대화 내역을 저장해서 챗봇이 이전 대화 내용을 기억할 수 있어야 한다
 - GPT에서 사용한 토큰의 수를 누적하여 Total Tokens Used 옆에 보여준다
