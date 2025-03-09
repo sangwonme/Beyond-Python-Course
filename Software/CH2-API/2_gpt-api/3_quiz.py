@@ -13,9 +13,6 @@ if "chat_history" not in st.session_state:
 if "total_tokens" not in st.session_state:
     st.session_state.total_tokens = 0
 
-# 토큰 사용량을 표시하는 상단 영역
-st.markdown(f"### :rocket: Total Tokens Used: **{st.session_state.total_tokens}**")
-
 # 사용자 입력 받기
 user_input = st.text_input("You:", key="user_input")
 
@@ -35,8 +32,9 @@ if st.button("Send") and user_input != "":
     # 응답 대화내역에 저장
     # TODO
 
-    # UI 업데이트
-    st.experimental_rerun()
+
+# 토큰 사용량을 표시하는 상단 영역
+st.markdown(f"### :rocket: Total Tokens Used: **{st.session_state.total_tokens}**")
 
 # 채팅 내역 출력
 container = st.container(border=True)
