@@ -18,6 +18,7 @@
 | API | [자료](./Software/CH2-API/1_api-basic) |
 | GPT-API | [자료](./Software/CH2-API/2_gpt-api) |
 | Whisper-API | [자료](./Software/CH2-API/3_whisper-api) |
+| Multimodal GPT | [자료](./Software/CH2-API/4_gpt-image-api/) |
 
 ###### CH3 LLM Prompting
 <!-- #### UI Design
