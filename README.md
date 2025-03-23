@@ -4,6 +4,15 @@
 
 > [API-key](https://docs.google.com/document/d/1TArgONkQoHQJlrgrAqhl6_mPaZSE-qLIwjaMsFNaUiY/edit?usp=sharing)
 
+### 발표자료
+##### 템플릿
+- [템플릿 링크](https://docs.google.com/presentation/d/1f3a00qT1CqFy3DlTMC0tQGzcxErhqEhRtkmCOTaVB1c/edit?usp=sharing)
+
+##### 예시
+- 2024 중등부 대상 [링크](https://drive.google.com/file/d/1lcoi9wnlDJX1uIpRdkSmykYtetol_yZQ/view?usp=sharing)
+- 2024 초등부 은상 [링크](https://drive.google.com/file/d/1kFb6kD1ah6V57KO03npWRbmW8fsUSOne/view?usp=sharing)
+
+
 ###### CH1 UI Design
 | Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Link |
 |---------------------|-------|
@@ -21,76 +30,3 @@
 | Multimodal GPT | [자료](./Software/CH2-API/4_gpt-image-api/) |
 
 ###### CH3 LLM Prompting
-<!-- #### UI Design
-
-streamlit을 활용한 UI 설계에 대해서 배웁니다. 
-
-| Lecture Topic &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Hours |
-|---------------------|-------|
-| [input UI](./CH1-UI-Design/streamlit-basic/)| X hrs |
-| layout | X hrs |
-| session state | X hrs |
-| [Quiz](./CH1-UI-Design/quiz/) | X hrs |
-
-#### Data Processing
-
-numpy, pandas를 활용한 데이터 처리를 배웁니다.
-
-| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Hours |
-|---------------------|-------|
-| Pandas Dataframe | X hrs |
-| Lambda function | X hrs |
-| Preprocessing | X hrs |
-| Quiz | X hrs |
-
-#### API
-
-API의 개념과 OpenAI API 사용법을 배웁니다.
-
-| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Hours |
-|---------------------|-------|
-| [Lorempicsum](./CH3-API/api-basic/) | X hrs |
-| GPT | X hrs |
-| GPT-vision | X hrs |
-| DALLE | X hrs |
-| Quiz | X hrs |
-
-#### Prompt Engineering
-
-LLM Prompting 기술들을 배웁니다.
-
-| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Hours |
-|---------------------|-------|
-| Prompting with user input | X hrs |
-| Zero-shot, One-shot, Few-shot | X hrs |
-| Chain-of-Thoughts | X hrs |
-| Quiz | X hrs |
-
-
-#### IoT Making
-
-Raspberry Pi를 활용하여 IoT에 대해 배웁니다.
-
-#### Computer Vision
-
-OpenCV와 Mediapipe를 활용하여 컴퓨터비전에 대해 배웁니다.
-
-| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Hours |
-|---------------------|-------|
-| Image/Video Capture | X hrs |
-| Image Processing | X hrs |
-| Drawing | X hrs |
-| Pose Estimation | X hrs |
-| Hand Pose Estimation | X hrs |
-| Gesture Recognition | X hrs |
-| Quiz | X hrs |
-
-#### AI Algorithms
-
-여러 AI 이론들을 배웁니다.
-
-| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Hours |
-|---------------------|-------|
-| Classification | X hrs |
-| [Embedding / Cosine Similarity](./CH7-AI-Algorithms/embedding-vector/) | 3 hrs |
-| Quiz | X hrs | -->
