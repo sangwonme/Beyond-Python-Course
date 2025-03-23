@@ -1,5 +1,8 @@
 비욘드 코딩 Python 수강반 수업자료
 
+### Zoom
+> [Zoom 링크](https://snu-ac-kr.zoom.us/j/3850287435)
+
 ### 수업자료
 
 > [API-key](https://docs.google.com/document/d/1TArgONkQoHQJlrgrAqhl6_mPaZSE-qLIwjaMsFNaUiY/edit?usp=sharing)
