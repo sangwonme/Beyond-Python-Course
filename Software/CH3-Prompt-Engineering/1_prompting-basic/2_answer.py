@@ -50,7 +50,7 @@ shopping_stories = [
     ,
     '''
     민지는 체리를 사러 갔지만 재고가 8팩밖에 없었다. 원래 10팩을 사려 했지만 8팩을 모두 구매했고, 키위는 5개를 사려고 했으나 예산이 부족해 3개만 구매했다. 
-    대신 파인애플 1개를 추가로 샀고, 처음에 사려던 망고는 너무 비싸 포기했다.
+    대신 파인애플 1개를 추가로 샀고, 처음에 사려던 망고는 너무 비싸 포기했다. 
     '''
 ]
 
@@ -65,13 +65,22 @@ for i in range(len(shopping_stories)):
 
     # TODO: Update prompts!
     prompt = f'''
-    Answer how many fruits
+    Answer how much to cost
+    You should follow the output format exactly
     {prices}
     {shopping_story}
+
+
+    Output Format:
+    Explanation: XXX
+    Answer
+    ```
+    XXX (only in number)
+    ```
     '''
 
     # GPT API
-    completion = client.chat.completions.create(
+    response = client.chat.completions.create(
       model="gpt-4o",
       messages=[
         {"role": "developer", "content": "You are a helpful assistant."},
@@ -80,12 +89,11 @@ for i in range(len(shopping_stories)):
     )
 
     # GPT Result
-    response = completion.choices[0].message.content
     print('--- GPT Response: ')
-    print(response)
+    print(response.choices[0].message.content)
 
     # Upate answer
-    answer = 0 #TODO: Update the answer
+    answer = int(response.choices[0].message.content.split('```')[1]) #TODO: Update the answer
 
     # Count correct
     passed = False
