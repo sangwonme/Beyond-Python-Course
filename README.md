@@ -33,3 +33,6 @@
 | Multimodal GPT | [자료](./Software/CH2-API/4_gpt-image-api/) |
 
 ###### CH3 LLM Prompting
+| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Link |
+|---------------------|-------|
+| Prompting Basics | [자료](./Software/CH3-Prompt-Engineering/1_prompting-basic/) |
