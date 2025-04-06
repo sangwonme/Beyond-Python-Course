@@ -7,6 +7,9 @@
 
 > [API-key](https://docs.google.com/document/d/1TArgONkQoHQJlrgrAqhl6_mPaZSE-qLIwjaMsFNaUiY/edit?usp=sharing)
 
+### 한국코드페어 2025 준비
+- [구글 드라이브 링크](https://drive.google.com/drive/folders/1W1c_jsm9SfZVrPvaU_Yf_UDZYoNquaD9?usp=sharing)
+
 ### 발표자료
 ##### 템플릿
 - [템플릿 링크](https://docs.google.com/presentation/d/1f3a00qT1CqFy3DlTMC0tQGzcxErhqEhRtkmCOTaVB1c/edit?usp=sharing)
