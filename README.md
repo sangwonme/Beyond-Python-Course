@@ -39,3 +39,9 @@
 | Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Link |
 |---------------------|-------|
 | Prompting Basics | [자료](./Software/CH3-Prompt-Engineering/1_prompting-basic/) |
+| Prompting Techniques | [자료](./Software/CH3-Prompt-Engineering/2_prompting-techniques/) |
+
+###### CH4 Data Processing
+| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Link |
+|---------------------|-------|
+| Data Format | [자료](./Software/CH4-Data-Processing/1_data_format/) |
