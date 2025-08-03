@@ -55,5 +55,4 @@
 |---------------------|-------|
 | Embedding Vector | [자료](./Software/CH6-Embedding-Vector/1_embedding/) |
 | CLIP | [자료](./Software/CH6-Embedding-Vector/2_clip/) |
-=======
 
