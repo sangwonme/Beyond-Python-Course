@@ -48,3 +48,12 @@
 | Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Link |
 |---------------------|-------|
 | Data Format | [자료](./Software/CH4-Data-Processing/1_data_format/) |
+
+
+###### CH6 Data Processing
+| Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Link |
+|---------------------|-------|
+| Embedding Vector | [자료](./Software/CH6-Embedding-Vector/1_embedding/) |
+| CLIP | [자료](./Software/CH6-Embedding-Vector/2_clip/) |
+=======
+
