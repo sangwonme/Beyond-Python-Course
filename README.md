@@ -1,5 +1,8 @@
 비욘드 코딩 Python 수강반 수업자료
 
+### KSEF 2025 Mini-Project
+> [구글 드라이브 링크](https://drive.google.com/drive/folders/1b6n6XGwiTq9YRPTIyaHFwcWUUioVauBb?usp=sharing)
+
 ### Zoom
 > [Zoom 링크](https://snu-ac-kr.zoom.us/j/3850287435)
 
@@ -46,8 +49,11 @@
 |---------------------|-------|
 | Data Format | [자료](./Software/CH4-Data-Processing/1_data_format/) |
 
+
 ###### CH6 Data Processing
 | Lecture Topic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Link |
 |---------------------|-------|
 | Embedding Vector | [자료](./Software/CH6-Embedding-Vector/1_embedding/) |
 | CLIP | [자료](./Software/CH6-Embedding-Vector/2_clip/) |
+=======
+
