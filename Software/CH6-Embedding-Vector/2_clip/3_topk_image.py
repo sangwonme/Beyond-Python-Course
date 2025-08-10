@@ -22,7 +22,7 @@ with torch.no_grad():
     image_embeddings = model.get_image_features(**image_inputs)
 
 # 텍스트
-text = ['A dog is sleeping']
+text = ['A dog is eating food']
 text_inputs = processor(text=text, return_tensors="pt", padding=True)
 with torch.no_grad():
     text_embedding = model.get_text_features(**text_inputs)
