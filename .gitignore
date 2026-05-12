@@ -1,0 +1,33 @@
+/Answers/
+
+.vscode
+**/.vscode
+/.vscode
+
+# Secrets / credentials
+.env
+.env.*
+!.env.example
+*.env
+secrets.json
+credentials.json
+*.pem
+*.key
+service-account*.json
+**/api_key*
+**/apikey*
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
