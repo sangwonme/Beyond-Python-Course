@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Alice",
+    "age": 30,
+    "addresses": [
+      {"type": "home", "city": "Seoul", "zipcode": "12345"},
+      {"type": "work", "city": "Busan", "zipcode": "67890"}
+    ]
+  },
+  {
+    "name": "Bob",
+    "age": 28,
+    "addresses": [
+      {"type": "home", "city": "Incheon", "zipcode": "54321"}
+    ]
+  }
+]

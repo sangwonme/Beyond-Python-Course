@@ -1,0 +1,31 @@
+id,category,question,gold,traditional_pred,traditional_correct,cot_pred,cot_correct
+L10,language,The price after a 20% discount is $40. What was the original price?,50,$50,1,$50,1
+L5,language,I buy 3 notebooks at $4 each and pay with $20. How much change do I get?,8,$8,1,8,1
+L1,language,A jar has 15 red marbles and 9 blue marbles. How many marbles are in the jar?,24,24,1,24,1
+U7,algebra,"If f(x)=2x^2-3x+1, compute f(4).",21,21,1,21,1
+U3,algebra,Solve the system: x + y = 9 and x - y = 3. What is x?,6,6,1,6,1
+A7,arithmetic,What is 48 ÷ 6?,8,8,1,8,1
+A6,arithmetic,Compute 18 + 27 - 11.,34,34,1,34,1
+L3,language,A car travels 180 km in 3 hours. What is its average speed in km/h?,60,60 km/h,1,60 km/h,1
+L2,language,Sara has twice as many stickers as Ben. Ben has 13 stickers. How many does Sara have?,26,26,1,26,1
+L6,language,A tank holds 120 liters. It’s 35% full. How many liters are in the tank?,42,42 liters,1,42,1
+A10,arithmetic,Compute 100 - (17 + 23).,60,60,1,60,1
+U6,algebra,Find the roots of x^2 - 5x + 6 = 0. Give the larger root.,3,3,1,3,1
+U10,algebra,"If a geometric sequence has a1 = 3 and ratio r = 2, what is a5?",48,48,1,48,1
+U2,algebra,Solve for x: 3x - 7 = 11.,6,6,1,6,1
+L7,language,A train leaves at 2:15 pm and arrives at 5:05 pm. How long is the trip in minutes?,170,170 minutes,1,170,1
+U8,algebra,"Simplify: (x^2 - 9)/(x - 3), for x ≠ 3. What is the simplified expression’s value at x=5?",8,10,0,8,1
+A2,arithmetic,Compute 125 - 87.,38,38,1,38,1
+L4,language,A rectangle’s length is 10 and width is 6. What is its area?,60,60,1,60,1
+L9,language,A class has 24 students. 3/8 are absent. How many are present?,15,15,1,18,0
+A3,arithmetic,What is 14 × 9?,126,126,1,126,1
+L8,language,A recipe needs 2.5 cups of flour. I have 1.75 cups. How many more cups do I need?,0.75,0.75 cups,1,0.75,1
+U9,algebra,Solve for x: (x/3) + (x/2) = 10.,12,12,1,12,1
+A5,arithmetic,What is 2^5?,32,32,1,32,1
+U5,algebra,Find the roots of x^2 - 5x + 6 = 0. Give the smaller root.,2,2,1,2,1
+A8,arithmetic,Compute (13 - 5) × 4.,32,32,1,32,1
+A9,arithmetic,What is 9 × 7?,63,63,1,63,1
+U4,algebra,Solve the system: 2x + 3y = 13 and x - y = 1. What is y?,3,2,0,3,1
+A1,arithmetic,What is 37 + 28?,65,65,1,65,1
+A4,arithmetic,What is 144 ÷ 12?,12,12,1,12,1
+U1,algebra,Solve for x: 2x + 5 = 19.,7,7,1,7,1
