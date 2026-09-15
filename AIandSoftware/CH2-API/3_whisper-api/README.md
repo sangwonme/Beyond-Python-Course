@@ -18,8 +18,11 @@
 
 `1_whisper.py` 코드를 살펴보자.
 ```python
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
-client = OpenAI(api_key=YOUR_KEY_HERE)
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 audio_file= open("./data/audio.wav", "rb")
 transcription = client.audio.transcriptions.create(
@@ -45,9 +48,12 @@ print(transcription.text)
 ### 예제: 오디오 파일을 텍스트로 저장하기
 `2_transcription.py`코드를 살펴보자.
 ```python
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
 
-client = OpenAI(api_key=YOUR_KEY_HERE)
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 audio_file = open("./data/audio.wav", "rb")
 transcription = client.audio.transcriptions.create(

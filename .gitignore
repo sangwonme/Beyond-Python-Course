@@ -31,3 +31,6 @@ __pycache__/
 venv/
 env/
 .ipynb_checkpoints/
+
+# Archives (내용은 디렉토리로 풀려 있음)
+*.zip

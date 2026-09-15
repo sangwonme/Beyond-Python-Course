@@ -1,7 +1,10 @@
+import os
+from dotenv import load_dotenv
 import base64
 from openai import OpenAI
 
-client = OpenAI(api_key=YOUR_KEY_HERE)
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Load and encode the image
 image_path = './data/apple.png'

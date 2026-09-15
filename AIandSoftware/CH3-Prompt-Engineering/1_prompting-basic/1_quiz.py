@@ -1,7 +1,10 @@
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
 
 # OpenAI 클라이언트 설정
-client = OpenAI(api_key=YOUR_KEY_HERE)
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # 과일 가격
 prices = {

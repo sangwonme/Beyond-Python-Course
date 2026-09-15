@@ -1,8 +1,11 @@
+import os
+from dotenv import load_dotenv
 import streamlit as st
 from openai import OpenAI
 
 # OpenAI 클라이언트 설정
-client = OpenAI(api_key=YOUR_KEY_HERE)
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 st.title("AI Chatbot with Token Tracker")
 

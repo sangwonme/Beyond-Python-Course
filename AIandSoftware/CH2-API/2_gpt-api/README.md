@@ -45,8 +45,11 @@
 
 `1_openai.py` 코드를 살펴보자
 ```python
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
-client = OpenAI(api_key=YOUR_KEY_HERE) # api_key를 꼭 입력해야 한다.
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY")) # 키는 .env의 OPENAI_API_KEY에서 읽어온다.
 
 completion = client.chat.completions.create(
   model="gpt-4o",
@@ -93,9 +96,12 @@ print(completion.choices[0].message)
 
 `2_simplechatbot.py`를 살펴보자.
 ```python
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
 
-client = OpenAI(api_key=YOUR_KEY_HERE)
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # 대화 내역 리스트
 chat_history = [{"role": "developer", "content": "You are a helpful chat-bot."}]

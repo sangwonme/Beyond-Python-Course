@@ -20,8 +20,11 @@
 
 ### 복습
 ```python
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
-client = OpenAI(api_key=YOUR_KEY_HERE)
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 completion = client.chat.completions.create(
   model="gpt-4o",
@@ -58,9 +61,12 @@ print(base64_image)  # 문자열의 앞부분만 출력
 `2_gptimage.py`를 실행해보자.
 ```python
 import base64
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
 
-client = OpenAI(api_key=YOUR_KEY_HERE)
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Load and encode the image
 image_path = './data/apple.png'
